@@ -423,4 +423,6 @@ export default defineConfig({
   },
   hash: true,
   ignoreMomentLocale: true,
+  base: '/mirror/ant-procomponents',
+  publicPath: '/mirror/ant-procomponents/',
 });
