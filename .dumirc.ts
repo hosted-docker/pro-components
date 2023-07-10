@@ -62,9 +62,7 @@ export default defineConfig({
       content: '9LDp--DeEC-xOggsHl_t1MlR_1_2O972JpSUu8NZKMU',
     },
   ],
-  analytics: {
-    ga_v2: 'G-RMBLDHGL1N',
-  },
+  analytics: {},
   favicons: [
     'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
   ],
