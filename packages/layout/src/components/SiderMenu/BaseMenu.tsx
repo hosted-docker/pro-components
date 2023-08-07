@@ -2,7 +2,8 @@ import { createFromIconfontCN } from '@ant-design/icons';
 import type { ProTokenType } from '@ant-design/pro-provider';
 import { ProProvider } from '@ant-design/pro-provider';
 import { isImg, isUrl, useMountMergeState } from '@ant-design/pro-utils';
-import { Menu, MenuProps, Skeleton, Tooltip } from 'antd';
+import type { MenuProps } from 'antd';
+import { Menu, Skeleton, Tooltip } from 'antd';
 import type { ItemType } from 'antd/lib/menu/hooks/useItems';
 import classNames from 'classnames';
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
@@ -30,6 +31,7 @@ const MenuItemTooltip = (props: {
   collapsed?: boolean;
   children: React.ReactNode;
   title?: React.ReactNode;
+  disable?: boolean;
 }) => {
   const [collapsed, setCollapsed] = useState(props.collapsed);
   const [open, setOpen] = useState(false);
@@ -39,6 +41,10 @@ const MenuItemTooltip = (props: {
       setCollapsed(props.collapsed);
     }, 400);
   }, [props.collapsed]);
+
+  if (props.disable) {
+    return props.children as JSX.Element;
+  }
 
   return (
     <Tooltip
@@ -240,7 +246,7 @@ class MenuUtil {
           {menuType === 'group' && collapsed ? null : shouldHasIcon &&
             iconDom ? (
             <span
-              className={`${baseClassName}-item-icon ${this.props?.hashId}`}
+              className={`${baseClassName}-item-icon ${this.props?.hashId}`.trim()}
             >
               {iconDom}
             </span>
@@ -362,7 +368,11 @@ class MenuUtil {
         );
     const defaultIcon = collapsed && hasIcon ? getMenuTitleSymbol(name) : null;
     let defaultItem = (
-      <MenuItemTooltip collapsed={collapsed} title={name}>
+      <MenuItemTooltip
+        collapsed={collapsed}
+        title={name}
+        disable={item.disabledTooltip}
+      >
         <div
           key={itemPath}
           className={classNames(
@@ -420,7 +430,7 @@ class MenuUtil {
           )}
         >
           <span
-            className={`${baseClassName}-item-icon ${this.props?.hashId}`}
+            className={`${baseClassName}-item-icon ${this.props?.hashId}`.trim()}
             style={{
               display: defaultIcon === null && !icon ? 'none' : '',
             }}

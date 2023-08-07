@@ -229,8 +229,8 @@ const covertFormName = (name?: NamePath) => {
   return [name];
 };
 
-function BaseFormComponents<T = Record<string, any>>(
-  props: BaseFormProps<T> & {
+function BaseFormComponents<T = Record<string, any>, U = Record<string, any>>(
+  props: BaseFormProps<T, U> & {
     loading: boolean;
     onUrlSearchChange: (value: Record<string, string | number>) => void;
     transformKey: (values: any, omit: boolean, parentKey?: NamePath) => any;
@@ -486,7 +486,9 @@ function BaseFormComponents<T = Record<string, any>>(
 /** 自动的formKey 防止重复 */
 let requestFormCacheId = 0;
 
-function BaseForm<T = Record<string, any>>(props: BaseFormProps<T>) {
+function BaseForm<T = Record<string, any>, U = Record<string, any>>(
+  props: BaseFormProps<T, U>,
+) {
   const {
     extraUrlParams = {},
     syncToUrl,
@@ -534,7 +536,7 @@ function BaseForm<T = Record<string, any>>(props: BaseFormProps<T>) {
   useEffect(() => {
     requestFormCacheId += 0;
   }, []);
-  const [initialData] = useFetchData({
+  const [initialData] = useFetchData<T, U>({
     request,
     params,
     proFieldKey: formKey,
@@ -549,6 +551,10 @@ function BaseForm<T = Record<string, any>>(props: BaseFormProps<T>) {
         [`> div:not(${token.proComponentsCls}-form-light-filter)`]: {
           '.pro-field': {
             maxWidth: '100%',
+            '@media screen and (max-width: 575px)': {
+              // 减少了 form 的 padding
+              maxWidth: 'calc(93vw - 48px)',
+            },
             // 适用于短数字，短文本或者选项
             '&-xs': {
               width: 104,
@@ -783,7 +789,7 @@ function BaseForm<T = Record<string, any>>(props: BaseFormProps<T>) {
               className={classNames(props.className, prefixCls, hashId)}
               onFinish={onFinish}
             >
-              <BaseFormComponents
+              <BaseFormComponents<T, U>
                 transformKey={transformKey}
                 autoComplete="off"
                 loading={loading}

@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.17.1...@ant-design/pro-form@2.17.2) (2023-08-04)
+
+### Bug Fixes
+
+- **form:** form field support moblie width best ([56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63ef0ef1ddcd457782555d91134bcbec6e6))
+- **form:** update ReturnType<SearchConvertKeyFn> ([#7462](https://github.com/ant-design/pro-components/issues/7462)) ([e19dd9e](https://github.com/ant-design/pro-components/commit/e19dd9e68a14bae8dbb6baa756a643df8cab4a9b))
+
+## [2.17.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.17.0...@ant-design/pro-form@2.17.1) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-form
+
+# [2.17.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.16.2...@ant-design/pro-form@2.17.0) (2023-07-31)
+
+### Features
+
+- **form:** StepForm added layoutRender props ([#7431](https://github.com/ant-design/pro-components/issues/7431)) ([3657b98](https://github.com/ant-design/pro-components/commit/3657b98ec779606979fd03e7fbec81f606c03a81))
+
+## [2.16.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.16.1...@ant-design/pro-form@2.16.2) (2023-07-24)
+
+### Bug Fixes
+
+- **form:** ProForm support readonly ([e466f4e](https://github.com/ant-design/pro-components/commit/e466f4ed72340b4c7f8fc1d5f23896a05609e989))
+- **form:** ProFormSet support lightProps ([0593fe1](https://github.com/ant-design/pro-components/commit/0593fe1100b9119e3ac2cf60e3994fb5f419e56f))
+- **form:** StepForm support moblie width ([6eee22f](https://github.com/ant-design/pro-components/commit/6eee22fd3d1fb5ced78c75805dda6325911cf1dc))
+
+## [2.16.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.16.0...@ant-design/pro-form@2.16.1) (2023-07-19)
+
+### Bug Fixes
+
+- **layout:** fix sider collpse no work error ([e17dee6](https://github.com/ant-design/pro-components/commit/e17dee6be22b21563d02775e460a331870ff557e)), closes [/github.com/ant-design/pro-components/issues/7398#issuecomment-1641911484](https://github.com//github.com/ant-design/pro-components/issues/7398/issues/issuecomment-1641911484)
+
+# [2.16.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.15.1...@ant-design/pro-form@2.16.0) (2023-07-19)
+
+### Bug Fixes
+
+- **form:** Fix the issue of the ProFormMoney component causing duplicate currency symbols when using trigger=onBlur ([bc94215](https://github.com/ant-design/pro-components/commit/bc9421543f4fb49774b4844b60dda39d19e52307))
+- **form:** ModalForm and DrawerForm support params type ([76470d8](https://github.com/ant-design/pro-components/commit/76470d81a88909d4b21ba3b06606434801e02007))
+- **form:** support OptionType types ([189f933](https://github.com/ant-design/pro-components/commit/189f9338be78af8dbdc54cb74432844a51b2c0c6))
+- **form:** 修复当 LightFilter 折叠模式 icon 样式问题 ([#7388](https://github.com/ant-design/pro-components/issues/7388)) ([bba664a](https://github.com/ant-design/pro-components/commit/bba664a955376d05284e5da81082cc002dd339bd))
+
+### Features
+
+- **form:** drawer support resizable ([#7288](https://github.com/ant-design/pro-components/issues/7288)) ([3f5cbe6](https://github.com/ant-design/pro-components/commit/3f5cbe667670b870f930005639f3c1eb7065144d))
+- **form:** StepsForm support multifile StepForm ([ccc35f5](https://github.com/ant-design/pro-components/commit/ccc35f581c18e05391209c6bd66b08a023b2427b))
+
+## [2.15.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.15.0...@ant-design/pro-form@2.15.1) (2023-07-14)
+
+### Bug Fixes
+
+- **form:** Fix the display style of the switch ([8cdeda4](https://github.com/ant-design/pro-components/commit/8cdeda486d2aebd0f290a64c389f298e62c21af1))
+
 # [2.15.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.14.3...@ant-design/pro-form@2.15.0) (2023-07-04)
 
 ### Features

@@ -1,6 +1,8 @@
 import type { GenerateStyle } from '@ant-design/pro-provider';
 import { ProProvider } from '@ant-design/pro-provider';
-import { Avatar, AvatarProps, Layout, Menu, SiderProps, Space } from 'antd';
+import type { AvatarProps, SiderProps } from 'antd';
+import { Avatar, Layout, Menu, Space } from 'antd';
+import { SiderContext } from 'antd/es/layout/Sider';
 import type { ItemType } from 'antd/lib/menu/hooks/useItems';
 import classNames from 'classnames';
 import type { CSSProperties } from 'react';
@@ -417,44 +419,46 @@ const SiderMenu: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (props) => {
       >
         {menuRenderDom}
       </div>
-      {links ? (
-        <div className={`${baseClassName}-links ${hashId}`.trim()}>
-          <Menu
-            inlineIndent={16}
-            className={`${baseClassName}-link-menu ${hashId}`.trim()}
-            selectedKeys={[]}
-            openKeys={[]}
-            theme={theme}
-            mode="inline"
-            items={linksMenuItems}
-          />
-        </div>
-      ) : null}
-      {showSiderExtraDom && (
-        <>
-          {actionAreaDom}
-          {!actionsDom && rightContentRender ? (
-            <div
-              className={classNames(`${baseClassName}-actions`, hashId, {
-                [`${baseClassName}-actions-collapsed`]: collapsed,
-              })}
-            >
-              {rightContentRender?.(props)}
-            </div>
-          ) : null}
-        </>
-      )}
-      {menuFooterDom && (
-        <div
-          className={classNames([
-            `${baseClassName}-footer`,
-            hashId,
-            { [`${baseClassName}-footer-collapsed`]: collapsed },
-          ])}
-        >
-          {menuFooterDom}
-        </div>
-      )}
+      <SiderContext.Provider value={{}}>
+        {links ? (
+          <div className={`${baseClassName}-links ${hashId}`.trim()}>
+            <Menu
+              inlineIndent={16}
+              className={`${baseClassName}-link-menu ${hashId}`.trim()}
+              selectedKeys={[]}
+              openKeys={[]}
+              theme={theme}
+              mode="inline"
+              items={linksMenuItems}
+            />
+          </div>
+        ) : null}
+        {showSiderExtraDom && (
+          <>
+            {actionAreaDom}
+            {!actionsDom && rightContentRender ? (
+              <div
+                className={classNames(`${baseClassName}-actions`, hashId, {
+                  [`${baseClassName}-actions-collapsed`]: collapsed,
+                })}
+              >
+                {rightContentRender?.(props)}
+              </div>
+            ) : null}
+          </>
+        )}
+        {menuFooterDom && (
+          <div
+            className={classNames([
+              `${baseClassName}-footer`,
+              hashId,
+              { [`${baseClassName}-footer-collapsed`]: collapsed },
+            ])}
+          >
+            {menuFooterDom}
+          </div>
+        )}
+      </SiderContext.Provider>
     </>
   );
 

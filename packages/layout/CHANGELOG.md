@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.16.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.6...@ant-design/pro-layout@7.16.7) (2023-08-04)
+
+### Bug Fixes
+
+- **layout:** fix menu item no aligen error ([450a823](https://github.com/ant-design/pro-components/commit/450a823f12b1eac1d866347ef55d6b5d866a011f))
+
+## [7.16.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.5...@ant-design/pro-layout@7.16.6) (2023-07-31)
+
+### Bug Fixes
+
+- **layout:** fix col size error ([749a303](https://github.com/ant-design/pro-components/commit/749a30309f8bde9cf5050ae28e164118eefce408))
+
+## [7.16.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.4...@ant-design/pro-layout@7.16.5) (2023-07-31)
+
+### Bug Fixes
+
+- **layout:** fix colorBgMenuItemHover no work error ([3efdd46](https://github.com/ant-design/pro-components/commit/3efdd465447b3cae82ecd43b3be435dfa3a9b55f))
+- **layout:** fix footer links hover no work error ([a2bdb21](https://github.com/ant-design/pro-components/commit/a2bdb21937da6faf31855e0a9ef271ec1ab73c8f))
+- **layout:** fix pop menu style error ([36bfccf](https://github.com/ant-design/pro-components/commit/36bfccf15c687f228c6244276065696d9c535bf7))
+
+## [7.16.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.3...@ant-design/pro-layout@7.16.4) (2023-07-24)
+
+### Bug Fixes
+
+- **layout:** fix submenu popup text is center error ([7191501](https://github.com/ant-design/pro-components/commit/71915016e6a243af9733981bcb1ff6ec06d01b5c))
+
+## [7.16.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.2...@ant-design/pro-layout@7.16.3) (2023-07-19)
+
+### Bug Fixes
+
+- **layout:** fix sider collpse no work error ([e17dee6](https://github.com/ant-design/pro-components/commit/e17dee6be22b21563d02775e460a331870ff557e)), closes [/github.com/ant-design/pro-components/issues/7398#issuecomment-1641911484](https://github.com//github.com/ant-design/pro-components/issues/7398/issues/issuecomment-1641911484)
+
+## [7.16.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.1...@ant-design/pro-layout@7.16.2) (2023-07-19)
+
+### Bug Fixes
+
+- **layout:** disable SiderContext when Sider other dom ([4d53446](https://github.com/ant-design/pro-components/commit/4d53446a608fe91d57aaece6cc7bffe89e387b2a))
+- **layout:** fix FooterToolBar width error ([54d9afe](https://github.com/ant-design/pro-components/commit/54d9afef13b21f3a502048941f787dfcda0d910a))
+- **layout:** Layout siderMenu delete getContainer = false ([ed0c88b](https://github.com/ant-design/pro-components/commit/ed0c88b01cc24a742578d00563ca48b27995e37a))
+- **layout:** menuItem support disableTooltip ([84b79c8](https://github.com/ant-design/pro-components/commit/84b79c85991ce8a34ef047f57849bcafe32e2cf1))
+- **table:** Fix the issue of actionref not being synchronized ([2160fb8](https://github.com/ant-design/pro-components/commit/2160fb846bcfe41809a37dfe6e1cc3fce1d211e7))
+
+## [7.16.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.0...@ant-design/pro-layout@7.16.1) (2023-07-14)
+
+### Bug Fixes
+
+- **layout:** fix abnormal animation playback. ([854ce2b](https://github.com/ant-design/pro-components/commit/854ce2b5d012362910ed3683095055b71a9b2fe5))
+- **layout:** Fix the issue of excessively long titles not being truncated. ([0e67775](https://github.com/ant-design/pro-components/commit/0e67775dd8c9e31346b2a309f4b7ce7dd46bf065))
+
 # [7.16.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.15.3...@ant-design/pro-layout@7.16.0) (2023-07-04)
 
 ### Bug Fixes

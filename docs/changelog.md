@@ -1,4 +1,88 @@
-﻿## @ant-design/pro-components@2.6.4
+﻿## @ant-design/pro-components@2.6.11
+
+`2023-08-04`
+
+- fix(layout): fix menu item no align error. [450a823](https://github.com/ant-design/pro-components/commit/450a823)
+- fix(form): form field support mobile width best. [56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63)
+- fix(form): update ReturnType<SearchConvertKeyFn> (#7462). [#7462](https://github.com/ant-design/pro-components/pull/#7462) [@q1uxu](https://github.com/q1uxu)
+- fix(table): restrict movement to only the vertical axis.. [5a8f9fb](https://github.com/ant-design/pro-components/commit/5a8f9fb)
+
+## @ant-design/pro-components@2.6.10
+
+`2023-07-31`
+
+- fix(layout): fix col size error. [749a303](https://github.com/ant-design/pro-components/commit/749a303)
+
+## @ant-design/pro-components@2.6.9
+
+`2023-07-31`
+
+- feat(components): hebrew support (#7435). [#7435](https://github.com/ant-design/pro-components/pull/#7435) [@edenHechtArbox](https://github.com/edenHechtArbox)
+- fix(layout): fix pop menu style error. [36bfccf](https://github.com/ant-design/pro-components/commit/36bfccf)
+- fix(layout): fix colorBgMenuItemHover no work error. [3efdd46](https://github.com/ant-design/pro-components/commit/3efdd46)
+- fix(layout): fix footer links hover no work error. [a2bdb21](https://github.com/ant-design/pro-components/commit/a2bdb21)
+- feat(form): StepForm added layoutRender props (#7431). [#7431](https://github.com/ant-design/pro-components/pull/#7431) [@xXAvoraXx](https://github.com/xXAvoraXx)
+
+## @ant-design/pro-components@2.6.8
+
+`2023-07-24`
+
+- fix(layout): fix submenu popup text is center error. [7191501](https://github.com/ant-design/pro-components/commit/7191501)
+- fix(form): StepForm support moblie width. [6eee22f](https://github.com/ant-design/pro-components/commit/6eee22f)
+- fix(form): ProFormSet support lightProps. [0593fe1](https://github.com/ant-design/pro-components/commit/0593fe1)
+- fix(form): ProForm support readonly. [e466f4e](https://github.com/ant-design/pro-components/commit/e466f4e)
+- fix(form): fix transform no set false error. [f547ed0](https://github.com/ant-design/pro-components/commit/f547ed0)
+
+## @ant-design/pro-components@2.6.7
+
+`2023-07-19`
+
+- fix(layout): fix sider collpse no work error. [e17dee6](https://github.com/ant-design/pro-components/commit/e17dee6)
+
+## @ant-design/pro-components@2.6.6
+
+`2023-07-19`
+
+- fix(layout): disable SiderContext when Sider other dom. [4d53446](https://github.com/ant-design/pro-components/commit/4d53446)
+- fix(layout): fix FooterToolBar width error. [54d9afe](https://github.com/ant-design/pro-components/commit/54d9afe)
+- fix(layout): Layout siderMenu delete getContainer = false. [ed0c88b](https://github.com/ant-design/pro-components/commit/ed0c88b)
+- fix(layout): menuItem support disableTooltip. [84b79c8](https://github.com/ant-design/pro-components/commit/84b79c8)
+- fix(form): 修复当 LightFilter 折叠模式 icon 样式问题 (#7388). [#7388](https://github.com/ant-design/pro-components/pull/#7388) [@datoou](https://github.com/datoou)
+- feat(form): drawer support resizable (#7288). [#7288](https://github.com/ant-design/pro-components/pull/#7288) [@natashaamin](https://github.com/natashaamin)
+- fix(form): fix jsonCode bgColor no work in dart mode. [03927db](https://github.com/ant-design/pro-components/commit/03927db)
+- fix(form): use 'Space.Compact' instead 'Input.Group'. [89e1fb4](https://github.com/ant-design/pro-components/commit/89e1fb4)
+- fix(form): LightFilter default set popupMatchSelectWidth=false. [27667aa](https://github.com/ant-design/pro-components/commit/27667aa)
+- fix(form): select use options. [59d5e72](https://github.com/ant-design/pro-components/commit/59d5e72)
+- feat(form): StepsForm support multifile StepForm. [ccc35f5](https://github.com/ant-design/pro-components/commit/ccc35f5)
+- fix(form): Fix the issue of the ProFormMoney component causing duplicate currency symbols when using trigger=onBlur. [bc94215](https://github.com/ant-design/pro-components/commit/bc94215)
+- fix(form): ModalForm and DrawerForm support params type. [76470d8](https://github.com/ant-design/pro-components/commit/76470d8)
+- fix(form): support OptionType types. [189f933](https://github.com/ant-design/pro-components/commit/189f933)
+- fix(form): CheckBox readonly mode support warp. [646f4a7](https://github.com/ant-design/pro-components/commit/646f4a7)
+- fix(list): ProList card support on checked. [2a0257e](https://github.com/ant-design/pro-components/commit/2a0257e)
+- fix(table): params change awaly reload fetch. [b147a16](https://github.com/ant-design/pro-components/commit/b147a16)
+- feat(table): ProTable support optionsRender. [8b56b6a](https://github.com/ant-design/pro-components/commit/8b56b6a)
+- fix(table): fix renderFormItem render twice render time. [c3b8ffd](https://github.com/ant-design/pro-components/commit/c3b8ffd)
+- fix(table): Protable support EXPAND_COLUMN and SELECTION_COLUMN. [3454347](https://github.com/ant-design/pro-components/commit/3454347)
+- fix(table): when checkable=false, no render all select boxs. [5421e41](https://github.com/ant-design/pro-components/commit/5421e41)
+- fix(table): Fix the columnsSetting styling issue in controlling column state when the table header is too long. [5b746b3](https://github.com/ant-design/pro-components/commit/5b746b3)
+- fix(table): Fix the issue where align="center" is not working. [db6fc65](https://github.com/ant-design/pro-components/commit/db6fc65)
+- fix(table): Fix the issue of actionref not being synchronized. [2160fb8](https://github.com/ant-design/pro-components/commit/2160fb8)
+- fix(table): dataSource support string list. [7b81b4c](https://github.com/ant-design/pro-components/commit/7b81b4c)
+- fix(descriptions): contentStyle add minwidth=0. [9087253](https://github.com/ant-design/pro-components/commit/9087253)
+
+## @ant-design/pro-components@2.6.5
+
+`2023-07-14`
+
+- fix(layout): Fix the issue of excessively long titles not being truncated.. [0e67775](https://github.com/ant-design/pro-components/commit/0e67775)
+- fix(layout): fix abnormal animation playback.. [854ce2b](https://github.com/ant-design/pro-components/commit/854ce2b)
+- fix(form): Fix the display style of the switch. [8cdeda4](https://github.com/ant-design/pro-components/commit/8cdeda4)
+- fix(form): InlineErrorFormItemPopover support radio and checkbox. [8c6ede6](https://github.com/ant-design/pro-components/commit/8c6ede6)
+- fix(table): export editor pro table props (#7330). [#7330](https://github.com/ant-design/pro-components/pull/#7330) [@ONLY-yours](https://github.com/ONLY-yours)
+- fix(card): change checkCard checked token (#7352). [#7352](https://github.com/ant-design/pro-components/pull/#7352) [@ONLY-yours](https://github.com/ONLY-yours)
+- fix(card): remove onChange stopPropagation. [5f4bb48](https://github.com/ant-design/pro-components/commit/5f4bb48)
+
+## @ant-design/pro-components@2.6.4
 
 `2023-07-04`
 

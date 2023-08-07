@@ -83,6 +83,15 @@ type StepsFormProps<T = Record<string, any>> = {
     | false;
 
   containerStyle?: React.CSSProperties;
+  /**
+   * 自定義整個佈局。
+   *
+   * @param layoutDom stepsDom 和 formDom 元素可以放置在任何地方。
+   */
+  layoutRender?: (layoutDom: {
+    stepsDom: React.ReactElement;
+    formDom: React.ReactElement;
+  }) => React.ReactNode;
 } & Omit<FormProviderProps, 'children'>;
 
 export const StepsFormProvide = React.createContext<
@@ -151,6 +160,13 @@ const StepsLayoutStrategy: Record<
   },
 };
 
+/**
+ * 给  StepForm 传递信息
+ */
+export const StepFormProvide = React.createContext<StepFormProps<any> | null>(
+  null,
+);
+
 function StepsForm<T = Record<string, any>>(
   props: StepsFormProps<T> & {
     children: React.ReactNode;
@@ -174,6 +190,7 @@ function StepsForm<T = Record<string, any>>(
     containerStyle,
     formRef,
     formMapRef: propsFormMapRef,
+    layoutRender: propsLayoutRender,
     ...rest
   } = props;
 
@@ -440,14 +457,17 @@ function StepsForm<T = Record<string, any>>(
           })}
           key={name}
         >
-          {React.cloneElement(item, {
-            ...config,
-            ...formProps,
-            ...itemProps,
-            name,
-            step: index,
-            key: name,
-          })}
+          <StepFormProvide.Provider
+            value={{
+              ...config,
+              ...formProps,
+              ...itemProps,
+              name,
+              step: index,
+            }}
+          >
+            {item}
+          </StepFormProvide.Provider>
         </div>
       );
     });
@@ -486,7 +506,15 @@ function StepsForm<T = Record<string, any>>(
     };
 
     if (stepsFormRender) {
-      return stepsFormRender(layoutRender(doms), submitterDom);
+      if (propsLayoutRender) {
+        return stepsFormRender(propsLayoutRender(doms), submitterDom);
+      } else {
+        return stepsFormRender(layoutRender(doms), submitterDom);
+      }
+    }
+
+    if (propsLayoutRender) {
+      return propsLayoutRender(doms);
     }
 
     return layoutRender(doms);
@@ -496,6 +524,7 @@ function StepsForm<T = Record<string, any>>(
     layoutRender,
     stepsFormRender,
     submitterDom,
+    propsLayoutRender,
   ]);
 
   return wrapSSR(

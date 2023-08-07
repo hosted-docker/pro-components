@@ -1,6 +1,6 @@
 {
   "name": "@ant-design/pro-skeleton",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "@ant-design/pro-skeleton",
   "keywords": [
     "antd",
@@ -34,8 +34,7 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.18.0",
-    "use-media-antd-query": "^1.1.0"
+    "@babel/runtime": "^7.18.0"
   },
   "devDependencies": {
     "typescript": "^5.0.4"

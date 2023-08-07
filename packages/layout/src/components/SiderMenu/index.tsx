@@ -19,7 +19,6 @@ const SiderMenuWrapper: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (
     style,
     className,
     hide,
-    getContainer = false,
     prefixCls,
   } = props;
 
@@ -66,14 +65,13 @@ const SiderMenuWrapper: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (
         }}
         maskClosable
         closable={false}
-        getContainer={getContainer}
         width={siderWidth}
         bodyStyle={{
           height: '100vh',
           padding: 0,
           display: 'flex',
           flexDirection: 'row',
-          backgroundColor: token?.layout?.sider?.colorMenuBackground,
+          backgroundColor: token.layout?.sider?.colorMenuBackground,
         }}
       >
         <SiderMenu

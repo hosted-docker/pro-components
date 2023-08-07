@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.8...@ant-design/pro-utils@2.12.9) (2023-08-04)
+
+### Bug Fixes
+
+- **form:** update ReturnType<SearchConvertKeyFn> ([#7462](https://github.com/ant-design/pro-components/issues/7462)) ([e19dd9e](https://github.com/ant-design/pro-components/commit/e19dd9e68a14bae8dbb6baa756a643df8cab4a9b))
+
+## [2.12.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.7...@ant-design/pro-utils@2.12.8) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-utils
+
+## [2.12.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.6...@ant-design/pro-utils@2.12.7) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-utils
+
+## [2.12.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.5...@ant-design/pro-utils@2.12.6) (2023-07-24)
+
+### Bug Fixes
+
+- **form:** fix transform no set false error ([f547ed0](https://github.com/ant-design/pro-components/commit/f547ed0c4c33b1d136985a515ac84f73b04da895))
+- **form:** ProForm support readonly ([e466f4e](https://github.com/ant-design/pro-components/commit/e466f4ed72340b4c7f8fc1d5f23896a05609e989))
+
+## [2.12.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.4...@ant-design/pro-utils@2.12.5) (2023-07-19)
+
+### Bug Fixes
+
+- **form:** ModalForm and DrawerForm support params type ([76470d8](https://github.com/ant-design/pro-components/commit/76470d81a88909d4b21ba3b06606434801e02007))
+- **form:** select use options ([59d5e72](https://github.com/ant-design/pro-components/commit/59d5e72b3cd57d4d91ce2a0e0b6abde1f68f37cf))
+
+## [2.12.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.3...@ant-design/pro-utils@2.12.4) (2023-07-14)
+
+### Bug Fixes
+
+- **form:** InlineErrorFormItemPopover support radio and checkbox ([8c6ede6](https://github.com/ant-design/pro-components/commit/8c6ede609dce67722c1e23819c0feb93ef0d153d))
+
 ## [2.12.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.12.2...@ant-design/pro-utils@2.12.3) (2023-07-04)
 
 **Note:** Version bump only for package @ant-design/pro-utils

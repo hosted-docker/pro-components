@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.9...@ant-design/pro-card@2.5.10) (2023-08-04)
+
+**Note:** Version bump only for package @ant-design/pro-card
+
+## [2.5.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.8...@ant-design/pro-card@2.5.9) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-card
+
+## [2.5.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.7...@ant-design/pro-card@2.5.8) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-card
+
+## [2.5.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.6...@ant-design/pro-card@2.5.7) (2023-07-24)
+
+**Note:** Version bump only for package @ant-design/pro-card
+
+## [2.5.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.5...@ant-design/pro-card@2.5.6) (2023-07-19)
+
+### Bug Fixes
+
+- **list:** ProList card support on checked ([2a0257e](https://github.com/ant-design/pro-components/commit/2a0257e476555323bf6813c4a3648c6a08dbb63d))
+- **table:** when checkable=false, no render all select boxs ([5421e41](https://github.com/ant-design/pro-components/commit/5421e41671afc084d6ba6cdb992e5320e72c2f8d))
+
+## [2.5.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.4...@ant-design/pro-card@2.5.5) (2023-07-14)
+
+### Bug Fixes
+
+- **card:** change checkcard checked token ([#7352](https://github.com/ant-design/pro-components/issues/7352)) ([8b2e00a](https://github.com/ant-design/pro-components/commit/8b2e00add79cd1547e52a4b1de6b8cd1796f52f9))
+- **card:** remove onChange stopPropagation ([5f4bb48](https://github.com/ant-design/pro-components/commit/5f4bb4849ffd70f3fd44d0a73183dc38df30c87a))
+
 ## [2.5.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-card@2.5.3...@ant-design/pro-card@2.5.4) (2023-07-04)
 
 **Note:** Version bump only for package @ant-design/pro-card

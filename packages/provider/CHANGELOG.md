@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-provider@2.12.0...@ant-design/pro-provider@2.12.1) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-provider
+
+# [2.12.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-provider@2.11.1...@ant-design/pro-provider@2.12.0) (2023-07-31)
+
+### Features
+
+- **components:** hebrew support ([#7435](https://github.com/ant-design/pro-components/issues/7435)) ([f1d646d](https://github.com/ant-design/pro-components/commit/f1d646d8c25d9082c2c50a22ad5837b6d2e91745))
+
+## [2.11.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-provider@2.11.0...@ant-design/pro-provider@2.11.1) (2023-07-14)
+
+### Bug Fixes
+
+- **form:** InlineErrorFormItemPopover support radio and checkbox ([8c6ede6](https://github.com/ant-design/pro-components/commit/8c6ede609dce67722c1e23819c0feb93ef0d153d))
+
 # [2.11.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-provider@2.10.5...@ant-design/pro-provider@2.11.0) (2023-07-04)
 
 ### Features

@@ -281,7 +281,7 @@ describe('PageContainer', () => {
     );
 
     expect(container.querySelector('.ant-pro-footer-bar')).toHaveStyle(
-      'width: calc(100% - 60px)',
+      'width: calc(100% - 64px)',
     );
 
     rerender(
@@ -307,7 +307,13 @@ describe('PageContainer', () => {
     const { container, rerender, unmount } = render(
       <ProLayout>
         <PageContainer>
-          <FooterToolbar>
+          <FooterToolbar
+            stylish={() => {
+              return {
+                height: '100%',
+              };
+            }}
+          >
             <button type="button" key="button">
               qixian
             </button>
@@ -332,7 +338,7 @@ describe('PageContainer', () => {
     );
 
     expect(container.querySelector('.ant-pro-footer-bar')).toHaveStyle(
-      'width: calc(100% - 60px)',
+      'width: calc(100% - 64px)',
     );
 
     rerender(

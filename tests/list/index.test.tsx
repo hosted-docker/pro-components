@@ -67,6 +67,12 @@ describe('List', () => {
           description: {
             dataIndex: ['desc', 'text'],
           },
+          xxx: {
+            dataIndex: ['desc', 'text'],
+          },
+          subTitle: {
+            d: 'desc text',
+          },
         }}
       />,
     );
@@ -782,6 +788,7 @@ describe('List', () => {
       html.queryByText('修复')?.click();
     });
   });
+
   it('🚏 trigger list item event when has grid prop', async () => {
     const fn1 = jest.fn();
     const fn2 = jest.fn();
@@ -829,15 +836,22 @@ describe('List', () => {
 
     act(() => {
       fireEvent.mouseEnter(
-        html.baseElement.querySelector('.ant-pro-list-row-card .ant-pro-card')!,
+        html.baseElement.querySelector(
+          '.ant-pro-list-row-card .ant-pro-checkcard',
+        )!,
         {},
       );
       fireEvent.click(
-        html.baseElement.querySelector('.ant-pro-list-row-card .ant-pro-card')!,
+        html.baseElement.querySelector(
+          '.ant-pro-list-row-card .ant-pro-checkcard',
+        )!,
         {},
       );
     });
-    expect(fn1).toBeCalledWith('我是名称');
-    expect(fn2).toBeCalledWith('我是名称');
+
+    await waitFor(() => {
+      expect(fn1).toBeCalledWith('我是名称');
+      expect(fn2).toBeCalledWith('我是名称');
+    });
   });
 });

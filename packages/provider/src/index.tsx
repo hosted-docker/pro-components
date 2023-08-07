@@ -9,12 +9,15 @@ import { SWRConfig, useSWRConfig } from 'swr';
 import type { IntlType } from './intl';
 import { findIntlKeyByAntdLocaleKey, intlMap, zhCNIntl } from './intl';
 
+import dayjs from 'dayjs';
 import type { DeepPartial, ProTokenType } from './typing/layoutToken';
 import { getLayoutDesignToken } from './typing/layoutToken';
 import type { ProAliasToken } from './useStyle';
 import { proTheme } from './useStyle';
 import { defaultToken, emptyTheme } from './useStyle/token';
 import { merge } from './utils/merge';
+
+import 'dayjs/locale/zh-cn';
 
 export * from './intl';
 export * from './useStyle';
@@ -147,7 +150,7 @@ export type ParamsType = Record<string, any>;
 export type ConfigContextPropsType = {
   intl?: IntlType;
   valueTypeMap?: Record<string, ProRenderFieldPropsType>;
-  token?: ProAliasToken;
+  token: ProAliasToken;
   hashId?: string;
   hashed?: boolean;
   dark?: boolean;
@@ -284,6 +287,14 @@ const ConfigProviderContainer: React.FC<{
     },
   );
 
+  const hashed = useMemo(() => {
+    if (props.hashed === false) {
+      return false;
+    }
+    if (proProvide.hashed === false) return false;
+    return true;
+  }, [proProvide.hashed, props.hashed]);
+
   const hashId = useMemo(() => {
     if (props.hashed === false) {
       return '';
@@ -298,15 +309,17 @@ const ConfigProviderContainer: React.FC<{
     }
   }, [nativeHashId, proProvide.hashed, props.hashed]);
 
+  useEffect(() => {
+    dayjs.locale(locale?.locale || 'zh-cn');
+  }, [locale?.locale]);
+
   const configProviderDom = useMemo(() => {
     const themeConfig = {
       ...restConfig.theme,
       hashId: hashId,
-      hashed:
-        props.hashed !== false &&
-        proProvide.hashed !== false &&
-        isNeedOpenHash(),
+      hashed: hashed && isNeedOpenHash(),
     };
+
     return (
       <AntdConfigProvider {...restConfig} theme={{ ...themeConfig }}>
         <ProConfigContext.Provider
@@ -315,7 +328,7 @@ const ConfigProviderContainer: React.FC<{
             valueTypeMap: valueTypeMap || proProvideValue?.valueTypeMap,
             token,
             theme: tokenContext.theme as unknown as Theme<any, any>,
-            hashed: props.hashed,
+            hashed,
             hashId,
           }}
         >

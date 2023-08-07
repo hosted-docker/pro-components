@@ -424,6 +424,7 @@ const ProTable = <
     actionRef: propsActionRef,
     columns: propsColumns = [],
     toolBarRender,
+    optionsRender,
     onLoad,
     onRequestError,
     style,
@@ -627,10 +628,12 @@ const ProTable = <
       ...action.pageInfo,
       setPageInfo: ({ pageSize, current }: PageInfo) => {
         const { pageInfo } = action;
+
         // pageSize 发生改变，并且你不是在第一页，切回到第一页
         // 这样可以防止出现 跳转到一个空的数据页的问题
         if (pageSize === pageInfo.pageSize || pageInfo.current === 1) {
           action.setPageInfo({ pageSize, current });
+
           return;
         }
 
@@ -678,7 +681,6 @@ const ProTable = <
     setSelectedRowKeys([]);
   }, [propsRowSelection, setSelectedRowKeys]);
 
-  counter.setAction(actionRef.current);
   counter.propsRef.current = props;
 
   /** 可编辑行的相关配置 */
@@ -733,6 +735,9 @@ const ProTable = <
     },
     editableUtils,
   });
+
+  /** 同步 action */
+  counter.setAction(actionRef.current);
 
   if (propsActionRef) {
     // @ts-ignore
@@ -814,28 +819,31 @@ const ProTable = <
   const isLightFilter: boolean =
     search !== false && search?.filterType === 'light';
 
-  const onFormSearchSubmit = <Y extends ParamsType>(values: Y): any => {
-    // 判断search.onSearch返回值决定是否更新formSearch
-    if (options && options.search) {
-      const { name = 'keyword' } =
-        options.search === true ? {} : options.search;
+  const onFormSearchSubmit = useCallback(
+    <Y extends ParamsType>(values: Y): any => {
+      // 判断search.onSearch返回值决定是否更新formSearch
+      if (options && options.search) {
+        const { name = 'keyword' } =
+          options.search === true ? {} : options.search;
 
-      /** 如果传入的 onSearch 返回值为 false，则不要把options.search.name对应的值set到formSearch */
-      const success = (options.search as OptionSearchProps)?.onSearch?.(
-        counter.keyWords!,
-      );
+        /** 如果传入的 onSearch 返回值为 false，则不要把options.search.name对应的值set到formSearch */
+        const success = (options.search as OptionSearchProps)?.onSearch?.(
+          counter.keyWords!,
+        );
 
-      if (success !== false) {
-        setFormSearch({
-          ...values,
-          [name]: counter.keyWords,
-        });
-        return;
+        if (success !== false) {
+          setFormSearch({
+            ...values,
+            [name]: counter.keyWords,
+          });
+          return;
+        }
       }
-    }
 
-    setFormSearch(values);
-  };
+      setFormSearch(values);
+    },
+    [counter.keyWords, options, setFormSearch],
+  );
 
   const loading = useMemo(() => {
     if (typeof action.loading === 'object') {
@@ -919,6 +927,7 @@ const ProTable = <
         }}
         searchNode={isLightFilter ? searchNode : null}
         options={options}
+        optionsRender={optionsRender}
         actionRef={actionRef}
         toolBarRender={toolBarRender}
       />

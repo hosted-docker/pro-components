@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.11](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.10...@ant-design/pro-descriptions@2.4.11) (2023-08-04)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.4.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.9...@ant-design/pro-descriptions@2.4.10) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.4.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.8...@ant-design/pro-descriptions@2.4.9) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.4.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.7...@ant-design/pro-descriptions@2.4.8) (2023-07-24)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.4.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.6...@ant-design/pro-descriptions@2.4.7) (2023-07-19)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.4.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.5...@ant-design/pro-descriptions@2.4.6) (2023-07-19)
+
+### Bug Fixes
+
+- **descriptions:** contentStyle add minwidth=0 ([9087253](https://github.com/ant-design/pro-components/commit/9087253b914d1d6280b9eb52011db63dcf009b89))
+
+## [2.4.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.4...@ant-design/pro-descriptions@2.4.5) (2023-07-14)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
 ## [2.4.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.4.3...@ant-design/pro-descriptions@2.4.4) (2023-07-04)
 
 **Note:** Version bump only for package @ant-design/pro-descriptions

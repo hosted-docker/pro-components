@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.11](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.10...@ant-design/pro-list@2.5.11) (2023-08-04)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
+## [2.5.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.9...@ant-design/pro-list@2.5.10) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
+## [2.5.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.8...@ant-design/pro-list@2.5.9) (2023-07-31)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
+## [2.5.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.7...@ant-design/pro-list@2.5.8) (2023-07-24)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
+## [2.5.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.6...@ant-design/pro-list@2.5.7) (2023-07-19)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
+## [2.5.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.5...@ant-design/pro-list@2.5.6) (2023-07-19)
+
+### Bug Fixes
+
+- **form:** select use options ([59d5e72](https://github.com/ant-design/pro-components/commit/59d5e72b3cd57d4d91ce2a0e0b6abde1f68f37cf))
+- **list:** ProList card support on checked ([2a0257e](https://github.com/ant-design/pro-components/commit/2a0257e476555323bf6813c4a3648c6a08dbb63d))
+
+## [2.5.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.4...@ant-design/pro-list@2.5.5) (2023-07-14)
+
+**Note:** Version bump only for package @ant-design/pro-list
+
 ## [2.5.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-list@2.5.3...@ant-design/pro-list@2.5.4) (2023-07-04)
 
 **Note:** Version bump only for package @ant-design/pro-list
