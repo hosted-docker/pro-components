@@ -2,12 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.17.2...@ant-design/pro-form@2.18.0) (2023-08-10)
+
+### Features
+
+- **field:** 调整 field color 为 antd 新的 ColorPicker ([#7403](https://github.com/ant-design/pro-components/issues/7403)) ([387ab8f](https://github.com/ant-design/pro-components/commit/387ab8f7fd5d6eb99ebd1458e76712cfce63483a))
+- **form:** transform 支持深合并 ([#7494](https://github.com/ant-design/pro-components/issues/7494)) ([f9372ce](https://github.com/ant-design/pro-components/commit/f9372ce89f6b2f2c53edd7bcda95a89edc211dd3))
+
 ## [2.17.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.17.1...@ant-design/pro-form@2.17.2) (2023-08-04)
 
 ### Bug Fixes
 
 - **form:** form field support moblie width best ([56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63ef0ef1ddcd457782555d91134bcbec6e6))
-- **form:** update ReturnType<SearchConvertKeyFn> ([#7462](https://github.com/ant-design/pro-components/issues/7462)) ([e19dd9e](https://github.com/ant-design/pro-components/commit/e19dd9e68a14bae8dbb6baa756a643df8cab4a9b))
+- **form:** update `ReturnType<SearchConvertKeyFn>` ([#7462](https://github.com/ant-design/pro-components/issues/7462)) ([e19dd9e](https://github.com/ant-design/pro-components/commit/e19dd9e68a14bae8dbb6baa756a643df8cab4a9b))
 
 ## [2.17.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.17.0...@ant-design/pro-form@2.17.1) (2023-07-31)
 

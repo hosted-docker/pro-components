@@ -907,6 +907,26 @@ exports[`descriptions demos 📸 renders ./packages/descriptions/src/demos/colum
                 <span
                   class="ant-descriptions-item-label"
                 >
+                  时间
+                </span>
+                <span
+                  class="ant-descriptions-item-content"
+                  style="min-width: 0;"
+                >
+                  2020-08-09
+                </span>
+              </div>
+            </td>
+            <td
+              class="ant-descriptions-item"
+              colspan="1"
+            >
+              <div
+                class="ant-descriptions-item-container"
+              >
+                <span
+                  class="ant-descriptions-item-label"
+                >
                   状态
                 </span>
                 <span
@@ -932,6 +952,28 @@ exports[`descriptions demos 📸 renders ./packages/descriptions/src/demos/colum
           <tr
             class="ant-descriptions-row"
           >
+            <td
+              class="ant-descriptions-item"
+              colspan="1"
+            >
+              <div
+                class="ant-descriptions-item-container"
+              >
+                <span
+                  class="ant-descriptions-item-label"
+                >
+                  money
+                </span>
+                <span
+                  class="ant-descriptions-item-content"
+                  style="min-width: 0;"
+                >
+                  <span>
+                    ¥1,212,100.00
+                  </span>
+                </span>
+              </div>
+            </td>
             <td
               class="ant-descriptions-item"
               colspan="1"
@@ -1143,7 +1185,9 @@ exports[`descriptions demos 📸 renders ./packages/descriptions/src/demos/colum
                   class="ant-descriptions-item-content"
                   style="min-width: 0;"
                 >
-                  多余的dom
+                  <div>
+                    多余的dom
+                  </div>
                 </span>
               </div>
             </td>
@@ -1805,6 +1849,7 @@ exports[`descriptions demos 📸 renders ./packages/descriptions/src/demos/dynam
                                                   aria-controls="layout_list"
                                                   aria-expanded="false"
                                                   aria-haspopup="listbox"
+                                                  aria-label="Search"
                                                   aria-owns="layout_list"
                                                   autocomplete="off"
                                                   class="ant-select-selection-search-input"
@@ -2009,6 +2054,7 @@ exports[`descriptions demos 📸 renders ./packages/descriptions/src/demos/dynam
                                                   aria-controls="size_list"
                                                   aria-expanded="false"
                                                   aria-haspopup="listbox"
+                                                  aria-label="Search"
                                                   aria-owns="size_list"
                                                   autocomplete="off"
                                                   class="ant-select-selection-search-input"

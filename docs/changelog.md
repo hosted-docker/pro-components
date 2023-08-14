@@ -1,10 +1,21 @@
-﻿## @ant-design/pro-components@2.6.11
+﻿## @ant-design/pro-components@2.6.12
+
+`2023-08-10`
+
+- fix(form): 修复 compact warning (#7496). [#7496](https://github.com/ant-design/pro-components/pull/#7496) [@xliez](https://github.com/xliez)
+- feat(form): transform 支持深合并 (#7494). [#7494](https://github.com/ant-design/pro-components/pull/#7494) [@xliez](https://github.com/xliez)
+- fix(form): 修复 transform 方法与预期不符 (#7486). [#7486](https://github.com/ant-design/pro-components/pull/#7486) [@xliez](https://github.com/xliez)
+- fix(form): 表单项配置 request 并且自定义 renderFormItem 时，没有透传 options 和 loading (#7457). [#7457](https://github.com/ant-design/pro-components/pull/#7457) [@Yang-yibu](https://github.com/Yang-yibu)
+- fix(table): DragSortTable 每次 render 执行时 Table DOM 会销毁重建新的 DOM (#7490). [#7490](https://github.com/ant-design/pro-components/pull/#7490) [@xliez](https://github.com/xliez)
+- feat(field): 调整 field color 为 antd 新的 ColorPicker (#7403). [#7403](https://github.com/ant-design/pro-components/pull/#7403) [@LengYXin](https://github.com/LengYXin)
+
+## @ant-design/pro-components@2.6.11
 
 `2023-08-04`
 
 - fix(layout): fix menu item no align error. [450a823](https://github.com/ant-design/pro-components/commit/450a823)
 - fix(form): form field support mobile width best. [56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63)
-- fix(form): update ReturnType<SearchConvertKeyFn> (#7462). [#7462](https://github.com/ant-design/pro-components/pull/#7462) [@q1uxu](https://github.com/q1uxu)
+- fix(form): update `ReturnType<SearchConvertKeyFn>` (#7462). [#7462](https://github.com/ant-design/pro-components/pull/#7462) [@q1uxu](https://github.com/q1uxu)
 - fix(table): restrict movement to only the vertical axis.. [5a8f9fb](https://github.com/ant-design/pro-components/commit/5a8f9fb)
 
 ## @ant-design/pro-components@2.6.10

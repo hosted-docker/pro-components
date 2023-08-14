@@ -1656,6 +1656,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                 >
                   <div
                     class="ant-color-picker-trigger ant-pro-field-color-picker"
+                    style="display: table-cell;"
                   >
                     <div
                       class="ant-color-picker-color-block"
@@ -1690,6 +1691,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                 >
                   <div
                     class="ant-color-picker-trigger ant-pro-field-color-picker ant-color-picker-trigger-disabled"
+                    style="display: table-cell;"
                   >
                     <div
                       class="ant-color-picker-color-block"
@@ -2695,6 +2697,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -3181,6 +3184,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -3258,6 +3262,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -4335,7 +4340,12 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                   <textarea
                     class="ant-input"
                     rows="5"
-                  />
+                  >
+                    yarn run v1.22.0            
+$ eslint --format=pretty ./packages
+Done in 9.70s.
+          
+                  </textarea>
                 </span>
               </div>
             </td>
@@ -4361,7 +4371,30 @@ exports[`field demos 📸 renders ./packages/field/src/demos/base_test.tsx corre
                   <textarea
                     class="ant-input"
                     rows="5"
-                  />
+                  >
+                    {
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/src",
+    "**/docs",
+    "scripts",
+    "**/demo",
+    ".eslintrc.js"
+  ]
+}
+                  </textarea>
                 </span>
               </div>
             </td>
@@ -4409,6 +4442,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/search-value.tsx co
                       aria-controls="name_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="name_list"
                       autocomplete="off"
                       class="ant-select-selection-search-input"
@@ -4506,6 +4540,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/search-value-autoCl
                           aria-controls="name_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="name_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -4611,6 +4646,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/select-request.tsx 
                         aria-controls="select_list"
                         aria-expanded="false"
                         aria-haspopup="listbox"
+                        aria-label="Search"
                         aria-owns="select_list"
                         autocomplete="off"
                         class="ant-select-selection-search-input"
@@ -4721,6 +4757,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/select-request.tsx 
                         aria-controls="select_list"
                         aria-expanded="false"
                         aria-haspopup="listbox"
+                        aria-label="Search"
                         aria-owns="select_list"
                         autocomplete="off"
                         class="ant-select-selection-search-input"
@@ -4904,6 +4941,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/tree-select-search-
                                 aria-controls="name_list"
                                 aria-expanded="true"
                                 aria-haspopup="listbox"
+                                aria-label="Search"
                                 aria-owns="name_list"
                                 autocomplete="off"
                                 class="ant-select-selection-search-input"
@@ -5103,6 +5141,7 @@ exports[`field demos 📸 renders ./packages/field/src/demos/tree-select-search-
                                 aria-controls="name2_list"
                                 aria-expanded="false"
                                 aria-haspopup="listbox"
+                                aria-label="Search"
                                 aria-owns="name2_list"
                                 autocomplete="off"
                                 class="ant-select-selection-search-input"

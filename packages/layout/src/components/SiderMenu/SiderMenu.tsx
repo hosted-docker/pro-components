@@ -253,7 +253,7 @@ const SiderMenu: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (props) => {
         <BaseMenu
           {...props}
           key="base-menu"
-          mode="inline"
+          mode={collapsed && !isMobile ? 'vertical' : 'inline'}
           handleOpenChange={onOpenChange}
           style={{
             width: '100%',
@@ -279,7 +279,9 @@ const SiderMenu: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (props) => {
     const { title, render, ...rest } = avatarProps;
     const dom = (
       <div className={`${baseClassName}-actions-avatar`}>
-        <Avatar size={28} {...rest} />
+        {rest?.src || rest?.srcSet || rest.icon || rest.children ? (
+          <Avatar size={28} {...rest} />
+        ) : null}
         {avatarProps.title && !collapsed && <span>{title}</span>}
       </div>
     );
