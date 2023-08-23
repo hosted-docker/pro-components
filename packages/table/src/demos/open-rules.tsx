@@ -12,8 +12,8 @@ type GithubIssueItem = {
   }[];
   state: string;
   comments: number;
-  created_at: string;
-  updated_at: string;
+  created_at: number;
+  updated_at: number;
 };
 
 const columns: ProColumns<GithubIssueItem>[] = [
@@ -127,8 +127,8 @@ export default () => {
               state: 'open',
               locked: false,
               comments: 1,
-              created_at: '1590486176000',
-              updated_at: '1590487382000',
+              created_at: 1590486176000,
+              updated_at: 1590487382000,
               closed_at: null,
               author_association: 'NONE',
               user: 'chenshuai2144',
@@ -165,8 +165,8 @@ export default () => {
               state: 'open',
               locked: false,
               comments: 1,
-              created_at: '1590486176000',
-              updated_at: '1590487382000',
+              created_at: 1590486176000,
+              updated_at: 1590487382000,
               closed_at: null,
               author_association: 'NONE',
               user: 'chenshuai2144',
