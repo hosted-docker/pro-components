@@ -83,17 +83,10 @@ const InlineErrorFormItemPopover: React.FC<{
       )}
       {...popoverProps}
     >
-      <div
-        style={{
-          width: 'max-content',
-          maxWidth: '100%',
-          padding: 4,
-        }}
-        tabIndex={-1}
-      >
+      <>
         {input}
         {extra}
-      </div>
+      </>
     </Popover>
   );
 };

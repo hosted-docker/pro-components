@@ -7,12 +7,13 @@ import {
 import {
   coverToNewToken,
   isBrowser,
+  useBreakpoint,
   useDocumentTitle,
   useMountMergeState,
 } from '@ant-design/pro-utils';
 import { getMatchMenu } from '@umijs/route-utils';
 import type { BreadcrumbProps } from 'antd';
-import { ConfigProvider, Grid, Layout } from 'antd';
+import { ConfigProvider, Layout } from 'antd';
 import classNames from 'classnames';
 import Omit from 'omit.js';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
@@ -558,24 +559,11 @@ const BaseProLayout: React.FC<ProLayoutProps> = (props) => {
     ...currentMenuLayoutProps,
   };
 
-  const defaultCol = useMemo(
-    () => ({
-      lg: true,
-      md: true,
-      sm: true,
-      xl: false,
-      xs: true,
-      xxl: false,
-    }),
-    [],
-  );
-  const col = Grid.useBreakpoint() || defaultCol;
+  const colSize = useBreakpoint();
 
-  const isMobile = (col.sm || col.xs) && !col.md && !props.disableMobile;
-
-  const colSize = useMemo(() => {
-    return Object.keys(col).filter((key) => col[key] === true)[0] || 'md';
-  }, [col]);
+  const isMobile = useMemo(() => {
+    return (colSize === 'sm' || colSize === 'xs') && !props.disableMobile;
+  }, [colSize, props.disableMobile]);
 
   // If it is a fix menu, calculate padding
   // don't need padding in phone mode
@@ -584,9 +572,10 @@ const BaseProLayout: React.FC<ProLayoutProps> = (props) => {
 
   const [collapsed, onCollapse] = useMergedState<boolean>(
     () => {
-      if (isMobile || colSize === 'md') return true;
       if (defaultCollapsed !== undefined) return defaultCollapsed;
-      if (isNeedOpenHash() === false) return false;
+      if (process.env.NODE_ENV === 'TEST') return false;
+      if (isMobile) return true;
+      if (colSize === 'md') return true;
       return false;
     },
     {
@@ -796,9 +785,12 @@ const BaseProLayout: React.FC<ProLayoutProps> = (props) => {
                     colorItemBgSelected:
                       token.layout?.sider?.colorBgMenuItemSelected ||
                       token?.colorBgTextHover,
-                    itemActiveBg:
+                    colorItemBgHover:
                       token.layout?.sider?.colorBgMenuItemHover ||
                       token?.colorBgTextHover,
+                    colorItemBgActive:
+                      token.layout?.sider?.colorBgMenuItemActive ||
+                      token?.colorBgTextActive,
                     colorItemBgSelectedHorizontal:
                       token.layout?.sider?.colorBgMenuItemSelected ||
                       token?.colorBgTextHover,
@@ -809,8 +801,8 @@ const BaseProLayout: React.FC<ProLayoutProps> = (props) => {
                       token.layout?.sider?.colorTextMenu ||
                       token?.colorTextSecondary,
                     colorItemTextHover:
-                      token.layout?.sider?.colorTextMenuActive ||
-                      'rgba(0, 0, 0, 0.85)',
+                      token.layout?.sider?.colorTextMenuItemHover ||
+                      'rgba(0, 0, 0, 0.85)', // 悬浮态
                     colorItemTextSelected:
                       token.layout?.sider?.colorTextMenuSelected ||
                       'rgba(0, 0, 0, 1)',
