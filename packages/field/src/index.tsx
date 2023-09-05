@@ -18,7 +18,6 @@ import {
 import { Avatar } from 'antd';
 import { noteOnce } from 'rc-util/lib/warning';
 import React, { useContext, useMemo } from 'react';
-import { stringify } from 'use-json-comparison';
 import FieldCascader from './components/Cascader';
 import FieldCheckbox from './components/Checkbox';
 import FieldCode from './components/Code';
@@ -648,7 +647,7 @@ const ProFieldComponent: React.ForwardRefRenderFunction<
 
   const fieldProps: any = useMemo(() => {
     return (
-      (value !== undefined || onChangeCallBack || restFieldProps) && {
+      (value !== undefined || restFieldProps) && {
         value,
         // fieldProps 优先级更高，在类似 LightFilter 场景下需要覆盖默认的 value 和 onChange
         ...omitUndefined(restFieldProps),
@@ -656,7 +655,7 @@ const ProFieldComponent: React.ForwardRefRenderFunction<
       }
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value, stringify(restFieldProps), onChangeCallBack]);
+  }, [value, restFieldProps, onChangeCallBack]);
 
   const renderedDom = useMemo(() => {
     return defaultRenderText(
@@ -703,7 +702,7 @@ const ProFieldComponent: React.ForwardRefRenderFunction<
     readonly,
     ref,
     renderFormItem,
-    stringify(rest),
+    rest,
     text,
     valueType,
   ]);

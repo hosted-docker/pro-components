@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.2...@ant-design/pro-field@2.12.3) (2023-08-30)
+
+### Bug Fixes
+
+- remove stringify ([f7c7d63](https://github.com/ant-design/pro-components/commit/f7c7d63b5cbcfe7f59f84af5049a8c6624482994))
+
+## [2.12.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.1...@ant-design/pro-field@2.12.2) (2023-08-29)
+
+### Bug Fixes
+
+- **form:** 解决因 stringify 导致死循环的问题 ([#7599](https://github.com/ant-design/pro-components/issues/7599)) ([d1ab1d1](https://github.com/ant-design/pro-components/commit/d1ab1d1a256cfe41beba7f69abf3588de7dbd446))
+
+## [2.12.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.0...@ant-design/pro-field@2.12.1) (2023-08-28)
+
+### Bug Fixes
+
+- **form:** textarea 只读状态样式不统一([#7578](https://github.com/ant-design/pro-components/issues/7578) [#6618](https://github.com/ant-design/pro-components/issues/6618)) ([#7579](https://github.com/ant-design/pro-components/issues/7579)) ([d727158](https://github.com/ant-design/pro-components/commit/d727158918b703f74990f823e91656785ea8a08b))
+
 # [2.12.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.11.0...@ant-design/pro-field@2.12.0) (2023-08-17)
 
 ### Bug Fixes
