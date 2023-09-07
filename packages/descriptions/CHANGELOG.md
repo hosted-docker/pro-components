@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.2...@ant-design/pro-descriptions@2.5.3) (2023-09-06)
+
+### Bug Fixes
+
+- remove stringify ([25d2c42](https://github.com/ant-design/pro-components/commit/25d2c42a0bda673a0b40b5ae56bd0a852998ecd1))
+
 ## [2.5.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.1...@ant-design/pro-descriptions@2.5.2) (2023-08-30)
 
 **Note:** Version bump only for package @ant-design/pro-descriptions
