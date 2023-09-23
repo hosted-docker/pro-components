@@ -12,13 +12,13 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 16.14.0
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8.6.7
 
-      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm install
         if: |
           steps.cache-pnpm-cache.outputs.cache-hit != 'true' ||
           steps.cache-node-modules.outputs.cache-hit != 'true'

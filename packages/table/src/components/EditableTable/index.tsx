@@ -1,6 +1,8 @@
 ﻿import { PlusOutlined } from '@ant-design/icons';
-import type { ProFormInstance } from '@ant-design/pro-form';
-import ProForm, { ProFormDependency } from '@ant-design/pro-form';
+import ProForm, {
+  ProFormDependency,
+  ProFormInstance,
+} from '@ant-design/pro-form';
 import type { ParamsType } from '@ant-design/pro-provider';
 import { useIntl } from '@ant-design/pro-provider';
 import {
@@ -198,32 +200,34 @@ function EditableTable<
    * @param finlayRowKey
    * @returns string | number
    */
-  const coverRowKey = (finlayRowKey: number | string): string | number => {
-    /**
-     * 如果是 prop.name 的模式，就需要把行号转化成具体的rowKey。
-     */
-    if (typeof finlayRowKey === 'number' && !props.name) {
-      if (finlayRowKey >= value.length) return finlayRowKey;
-      const rowData = value && value[finlayRowKey];
-      return getRowKey?.(rowData!, finlayRowKey);
-    }
+  const coverRowKey = useRefFunction(
+    (finlayRowKey: number | string): string | number => {
+      /**
+       * 如果是 prop.name 的模式，就需要把行号转化成具体的rowKey。
+       */
+      if (typeof finlayRowKey === 'number' && !props.name) {
+        if (finlayRowKey >= value.length) return finlayRowKey;
+        const rowData = value && value[finlayRowKey];
+        return getRowKey?.(rowData!, finlayRowKey);
+      }
 
-    /**
-     * 如果是 prop.name 的模式，就直接返回行号
-     */
-    if (
-      (typeof finlayRowKey === 'string' || finlayRowKey >= value.length) &&
-      props.name
-    ) {
-      const rowIndex = value.findIndex((item, index) => {
-        return (
-          getRowKey?.(item, index)?.toString() === finlayRowKey?.toString()
-        );
-      });
-      if (rowIndex !== -1) return rowIndex;
-    }
-    return finlayRowKey;
-  };
+      /**
+       * 如果是 prop.name 的模式，就直接返回行号
+       */
+      if (
+        (typeof finlayRowKey === 'string' || finlayRowKey >= value.length) &&
+        props.name
+      ) {
+        const rowIndex = value.findIndex((item, index) => {
+          return (
+            getRowKey?.(item, index)?.toString() === finlayRowKey?.toString()
+          );
+        });
+        if (rowIndex !== -1) return rowIndex;
+      }
+      return finlayRowKey;
+    },
+  );
 
   // 设置 editableFormRef
   useImperativeHandle(
@@ -295,14 +299,14 @@ function EditableTable<
         },
       } as EditableFormInstance<DataType>;
     },
-    [props.name, formRef.current],
+    [coverRowKey, props.name, formRef.current],
   );
 
   useEffect(() => {
     if (!props.controlled) return;
     value.forEach((current, index) => {
       formRef.current?.setFieldsValue({
-        [getRowKey(current, index)]: current,
+        [`${getRowKey(current, index)}`]: current,
       });
     }, {});
     // eslint-disable-next-line react-hooks/exhaustive-deps

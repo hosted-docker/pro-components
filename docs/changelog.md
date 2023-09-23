@@ -1,10 +1,51 @@
-﻿## @ant-design/pro-components@2.6.17
+﻿## @ant-design/pro-components@2.6.23
+
+`2023-09-20`
+
+- fix(layout): WaterMark support dark theme. [0898061](https://github.com/ant-design/pro-components/commit/0898061)
+- fix(table): 修复 ColumnSetting Tree 组件 title 过长导致强制换行的问题. [08ded31](https://github.com/ant-design/pro-components/commit/08ded31)
+
+## @ant-design/pro-components@2.6.21
+
+`2023-09-18`
+
+- fix(layout): 默认宽度更改为 1152. [84cc927](https://github.com/ant-design/pro-components/commit/84cc927)
+- fix(layout): deprecated warning (#7693). [#7693](https://github.com/ant-design/pro-components/pull/#7693) [@kungege](https://github.com/kungege)
+- fix(table): less render function. [b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405)
+
+## @ant-design/pro-components@2.6.20
+
+`2023-09-18`
+
+- fix(layout): default set contentWidth=Fixed. [065524d](https://github.com/ant-design/pro-components/commit/065524d)
+- fix(form): 修复 treeSelect 组件 bordered 属性无法生效 (#7687). [#7687](https://github.com/ant-design/pro-components/pull/#7687) [@badrylin](https://github.com/badrylin)
+- fix(form): form list support readonly. [6407072](https://github.com/ant-design/pro-components/commit/6407072)
+- fix(table): EditableProTable reset FormItem grid. [c53ecce](https://github.com/ant-design/pro-components/commit/c53ecce)
+- fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
+
+## @ant-design/pro-components@2.6.19
+
+`2023-09-14`
+
+- fix(layout): 默认宽度更改为 1152. [8fd2665](https://github.com/ant-design/pro-components/commit/8fd2665)
+- feat(layout): 更新 PageContainer Token 样式和计算规则 (#7645). [#7645](https://github.com/ant-design/pro-components/pull/#7645) [@ONLY-yours](https://github.com/ONLY-yours)
+- fix(form): 优化 PassWord 展现形式 (#7657). [#7657](https://github.com/ant-design/pro-components/pull/#7657) [@leshalv](https://github.com/leshalv)
+- fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
+
+## @ant-design/pro-components@2.6.18
+
+`2023-09-07`
+
+- 修复了布局中点击链接无效的错误。[9252b14](https://github.com/ant-design/pro-components/commit/9252b14)
+- 修复了抽屉表单（DrawerForm）中控制宽度权重失效的问题。[#7642](https://github.com/ant-design/pro-components/pull/#7642) [@ONLY-yours](https://github.com/ONLY-yours)
+
+## @ant-design/pro-components@2.6.17
 
 `2023-09-06`
 
 - fix(layout): appList item click preventDefault and stopPropagation. [9b3cd65](https://github.com/ant-design/pro-components/commit/9b3cd65)
 - fix(layout): fix menu title center error. [904a89f](https://github.com/ant-design/pro-components/commit/904a89f)
-- fix(form): fix datepicker format (#7622). [#7622](https://github.com/ant-design/pro-components/pull/#7622) [@SummyGitHub](https://github.com/SummyGitHub)
+- fix(form): fix DatePicker format (#7622). [#7622](https://github.com/ant-design/pro-components/pull/#7622) [@SummyGitHub](https://github.com/SummyGitHub)
 - fix(form):更新 DrawerForm resize 参数默认值&文档描述 (#7621). [#7621](https://github.com/ant-design/pro-components/pull/#7621) [@LengYXin](https://github.com/LengYXin)
 - fix(form): dependency 支持 colSize (#7611). [#7611](https://github.com/ant-design/pro-components/pull/#7611) [@yiyi17](https://github.com/yiyi17)
 - fix(form): fix marginBlockEnd no use marginLG error. [6e5f384](https://github.com/ant-design/pro-components/commit/6e5f384)

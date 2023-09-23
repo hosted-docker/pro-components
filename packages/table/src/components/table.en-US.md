@@ -117,7 +117,7 @@ ProTable puts a layer of wrapping on top of antd's Table, supports some presets,
 | value | Column status, support controlled mode | `Record <string, ColumnsState>;` |
 | onChange | Column status After changing | `(value: Record <string, ColumnsState>) => void` |
 | PersistenceKey | The key of the persistence column is used to determine if it is the same table | `string \| Number` |
-| PersistenceType | The type of persistence column, localStorage is also existing after closing the browser, sessionStorage closes the browser will be lost | `localstorage \| sessionStorage` |
+| PersistenceType | The type of persistence column, localStorage is also existing after closing the browser, sessionStorage closes the browser will be lost | `localStorage \| sessionStorage` |
 
 #### Search Search form
 
@@ -130,11 +130,12 @@ ProTable puts a layer of wrapping on top of antd's Table, supports some presets,
 | labelWidth | Label width | `'number'` \| `'auto'` | 80 |
 | span | Configure the number of columns in the query form | `'number'` \| [`'ColConfig'`](#ColConfig) | defaultColConfig |
 | className | Encapsulated search Form className | `string` | - |
-| collapseRender | Collapse button render | `(collapsed: boolean,showCollapseButton?: boolean,) => ReactNode` | - |
+| collapseRender | Collapse button render | `((collapsed: boolean,showCollapseButton?: boolean) => ReactNode)`\|`false` | - |
 | defaultCollapsed | Whether to collapse by default | `boolean` | true |
 | collapsed | collapsed | `boolean` | - |
 | onCollapse | Collapse button event | `(collapsed: boolean) => void;` | - |
 | optionRender | Custom action bar | `((searchConfig,formProps,dom) => ReactNode[])`\|`false` | - |
+| showHiddenNum | Whether to show the number of hidden items after storing | `boolean` | `false` |
 
 #### ColConfig
 
@@ -322,3 +323,11 @@ SearchProps is a property of antd's [Input.Search](https://ant.design/components
 | activeKey | currently selected item | `string` | - |
 | items | menu items | `{ key: string; tab: ReactNode }[]` | - |
 | onChange | Callback for toggling menu items | `(activeKey)=>void` | - |
+
+#### TableDropdown
+
+| parameters | description | type | default |
+| --- | --- | --- | --- |
+| key | Unique identifier | `string` | - |
+| name | Content | `ReactNode` | - |
+| (...Menu.Item) | [Menu.Item](https://ant.design/components/menu-cn/#Menu.Item) from Ant Design | Menu.Item | - |

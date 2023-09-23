@@ -44,23 +44,13 @@ Object.defineProperty(globalThis, 'open', {
   value: vi.fn(),
 });
 
-Object.defineProperty(globalThis, 'crypto', {
-  value: {
-    getRandomValues: (arr: any[]) => crypto.randomBytes(arr.length),
-  },
-});
-
-globalThis.requestAnimationFrame =
-  globalThis.requestAnimationFrame ||
-  function requestAnimationFrame(cb) {
-    return setTimeout(cb, 0);
-  };
-
-globalThis.cancelAnimationFrame =
-  globalThis.cancelAnimationFrame ||
-  function cancelAnimationFrame() {
-    return null;
-  };
+if (!globalThis.crypto) {
+  Object.defineProperty(globalThis, 'crypto', {
+    value: {
+      getRandomValues: (arr: any[]) => crypto.randomBytes(arr.length),
+    },
+  });
+}
 
 // browserMocks.js
 export const localStorageMock = (() => {

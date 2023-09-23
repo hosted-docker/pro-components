@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.6...@ant-design/pro-table@3.12.7) (2023-09-19)
+
+### Bug Fixes
+
+- **layout:** unuse Tab.TabPanel ([6dd59a2](https://github.com/ant-design/pro-components/commit/6dd59a22b46696aa3d89680b7c2635b75be60aaf))
+- **table:** 修复 ColumnSetting Tree 组件 title 过长导致强制换行的问题 ([08ded31](https://github.com/ant-design/pro-components/commit/08ded31326c3139865d5c291745ecb2c7659f67b))
+
+## [3.12.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.5...@ant-design/pro-table@3.12.6) (2023-09-18)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.12.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.4...@ant-design/pro-table@3.12.5) (2023-09-18)
+
+### Bug Fixes
+
+- **table:** EditableProTable reset FormItem grid ([c53ecce](https://github.com/ant-design/pro-components/commit/c53ecce5d82553f952b19db22903970f13a586a5))
+
+## [3.12.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.3...@ant-design/pro-table@3.12.4) (2023-09-14)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.12.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.2...@ant-design/pro-table@3.12.3) (2023-09-07)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
 ## [3.12.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.12.1...@ant-design/pro-table@3.12.2) (2023-09-06)
 
 ### Bug Fixes

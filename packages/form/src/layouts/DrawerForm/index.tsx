@@ -96,7 +96,7 @@ function DrawerForm<T = Record<string, any>, U = Record<string, any>>({
   onFinish,
   submitTimeout,
   title,
-  width = 800,
+  width,
   resize,
   onOpenChange,
   visible: propVisible,
@@ -137,8 +137,9 @@ function DrawerForm<T = Record<string, any>, U = Record<string, any>>({
   const [, forceUpdate] = useState([]);
   const [loading, setLoading] = useState(false);
   const [resizableDrawer, setResizableDrawer] = useState(false);
+
   const [drawerWidth, setDrawerWidth] = useState<DrawerProps['width']>(
-    resizeInfo?.minWidth ?? width,
+    width ? width : resize ? resizeInfo?.minWidth : 800,
   );
 
   const [open, setOpen] = useMergedState<boolean>(!!propVisible, {
@@ -279,7 +280,7 @@ function DrawerForm<T = Record<string, any>, U = Record<string, any>>({
       const offsetRight: number | string = ((document.body.offsetWidth ||
         1000) -
         (e.clientX - document.body.offsetLeft)) as number | string;
-      const minWidth = resizeInfo?.minWidth ?? width;
+      const minWidth = resizeInfo?.minWidth ?? (width || 800);
       const maxWidth = resizeInfo?.maxWidth ?? window.innerWidth * 0.8;
 
       if (offsetRight < minWidth) {

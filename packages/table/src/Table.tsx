@@ -4,7 +4,7 @@ import 'antd/lib/typography/style';
 //----------------------
 
 import ProCard from '@ant-design/pro-card';
-import ProForm from '@ant-design/pro-form';
+import ProForm, { GridContext } from '@ant-design/pro-form';
 import type { ParamsType } from '@ant-design/pro-provider';
 import { ProConfigProvider, proTheme, useIntl } from '@ant-design/pro-provider';
 import {
@@ -28,6 +28,7 @@ import type {
 import classNames from 'classnames';
 import type Summary from 'rc-table/lib/Footer/Summary';
 import React, {
+  Key,
   useCallback,
   useContext,
   useEffect,
@@ -267,7 +268,17 @@ function TableRender<T extends Record<string, any>, U, ValueType>(
   }, []);
 
   /** 默认的 table dom，如果是编辑模式，外面还要包个 form */
-  const baseTableDom = <Table<T> {...getTableProps()} rowKey={rowKey} />;
+  const baseTableDom = (
+    <GridContext.Provider
+      value={{
+        grid: false,
+        colProps: undefined,
+        rowProps: undefined,
+      }}
+    >
+      <Table<T> {...getTableProps()} rowKey={rowKey} />
+    </GridContext.Provider>
+  );
 
   /** 自定义的 render */
   const tableDom = props.tableViewRender
@@ -312,6 +323,7 @@ function TableRender<T extends Record<string, any>, U, ValueType>(
       <>
         {toolbarDom}
         {alertDom}
+
         {tableDom}
       </>
     );
@@ -467,7 +479,7 @@ const ProTable = <
 
   /** 单选多选的相关逻辑 */
   const [selectedRowKeys, setSelectedRowKeys] = useMountMergeState<
-    (string | number)[] | undefined
+    (string | number)[] | Key[] | undefined
   >(
     propsRowSelection
       ? propsRowSelection?.defaultSelectedRowKeys || []
@@ -681,7 +693,7 @@ const ProTable = <
     setSelectedRowKeys([]);
   }, [propsRowSelection, setSelectedRowKeys]);
 
-  counter.propsRef.current = props;
+  counter.propsRef.current = props as ProTableProps<any, any, any>;
 
   /** 可编辑行的相关配置 */
   const editableUtils = useEditableArray<any>({

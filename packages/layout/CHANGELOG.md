@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.17.3...@ant-design/pro-layout@7.17.4) (2023-09-20)
+
+### Bug Fixes
+
+- **layout:** WaterMark support dark theme ([0898061](https://github.com/ant-design/pro-components/commit/089806108fd815b672ea080015cba032c14296f6))
+- **layout:** WaterMark support dark theme ([7a09db5](https://github.com/ant-design/pro-components/commit/7a09db5b0ba5b994579e830c7125fafa8a702343))
+
+## [7.17.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.17.2...@ant-design/pro-layout@7.17.3) (2023-09-19)
+
+### Bug Fixes
+
+- **layout:** unuse Tab.TabPanel ([6dd59a2](https://github.com/ant-design/pro-components/commit/6dd59a22b46696aa3d89680b7c2635b75be60aaf))
+
+## [7.17.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.17.1...@ant-design/pro-layout@7.17.2) (2023-09-18)
+
+### Bug Fixes
+
+- **layout:** deprecated warning ([#7693](https://github.com/ant-design/pro-components/issues/7693)) ([896c4d6](https://github.com/ant-design/pro-components/commit/896c4d6797345e19a1c9193799fa573a9bfd01ea))
+- **layout:** 默认宽度更改为 1152 ([84cc927](https://github.com/ant-design/pro-components/commit/84cc9274d5a161b171254b2039a78b2a6942b375))
+
+## [7.17.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.17.0...@ant-design/pro-layout@7.17.1) (2023-09-18)
+
+### Bug Fixes
+
+- **layout:** default set contentWidth=Fixed ([065524d](https://github.com/ant-design/pro-components/commit/065524d74c9be77b0889640a2183f7adf0c60290))
+
+# [7.17.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.13...@ant-design/pro-layout@7.17.0) (2023-09-14)
+
+### Bug Fixes
+
+- **layout:** 默认宽度更改为 1152 ([8fd2665](https://github.com/ant-design/pro-components/commit/8fd2665f244ab1d3c647ff30cd2d270c7e5def61))
+
+### Features
+
+- **layout:** 更新 PageContainer Token 样式和计算规则 ([#7645](https://github.com/ant-design/pro-components/issues/7645)) ([f341313](https://github.com/ant-design/pro-components/commit/f341313672562619e443a2d4b8b716da0248da02))
+
+## [7.16.13](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.12...@ant-design/pro-layout@7.16.13) (2023-09-07)
+
+### Bug Fixes
+
+- **layout:** fix click url no work error ([9252b14](https://github.com/ant-design/pro-components/commit/9252b14b6b95a0901c16106c3d53d45e501744b4))
+
 ## [7.16.12](https://github.com/ant-design/pro-components/compare/@ant-design/pro-layout@7.16.11...@ant-design/pro-layout@7.16.12) (2023-09-06)
 
 ### Bug Fixes

@@ -12,10 +12,15 @@ const genPageContainerStyle: GenerateStyle<PageContainerToken> = (token) => {
     [token.componentCls]: {
       position: 'relative',
       '&-children-container': {
-        paddingBlock:
+        paddingBlockStart: 0,
+        paddingBlockEnd:
           token.layout?.pageContainer?.paddingBlockPageContainerContent,
         paddingInline:
           token.layout?.pageContainer?.paddingInlinePageContainerContent,
+      },
+      '&-children-container-no-header': {
+        paddingBlockStart:
+          token.layout?.pageContainer?.paddingBlockPageContainerContent,
       },
       '&-affix': {
         [`${token.antCls}-affix`]: {
@@ -30,7 +35,7 @@ const genPageContainerStyle: GenerateStyle<PageContainerToken> = (token) => {
       ['& &-warp-page-header']: {
         paddingBlockStart:
           (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
-            40) / 3,
+            40) / 4,
         paddingBlockEnd:
           (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
             40) / 2,
@@ -44,6 +49,23 @@ const genPageContainerStyle: GenerateStyle<PageContainerToken> = (token) => {
               (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
                 24) / 3,
           },
+        },
+        [`${token.antCls}-page-header-breadcrumb`]: {
+          paddingBlockStart:
+            (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
+              40) /
+              4 +
+            10,
+        },
+        [`${token.antCls}-page-header-heading`]: {
+          paddingBlockStart:
+            (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
+              40) / 4,
+        },
+        [`${token.antCls}-page-header-footer`]: {
+          marginBlockStart:
+            (token.layout?.pageContainer?.paddingBlockPageContainerContent ??
+              40) / 4,
         },
       },
       '&-detail': {

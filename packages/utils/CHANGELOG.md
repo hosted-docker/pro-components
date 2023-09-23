@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.14.4...@ant-design/pro-utils@2.14.5) (2023-09-18)
+
+### Bug Fixes
+
+- **table:** less render function ([b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405b2e1fcfe688f98096520a828b5d098ed3))
+
+## [2.14.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.14.3...@ant-design/pro-utils@2.14.4) (2023-09-14)
+
+**Note:** Version bump only for package @ant-design/pro-utils
+
 ## [2.14.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.14.2...@ant-design/pro-utils@2.14.3) (2023-09-06)
 
 ### Bug Fixes

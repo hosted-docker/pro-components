@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.7...@ant-design/pro-field@2.12.8) (2023-09-19)
+
+**Note:** Version bump only for package @ant-design/pro-field
+
+## [2.12.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.6...@ant-design/pro-field@2.12.7) (2023-09-18)
+
+### Bug Fixes
+
+- **table:** less render function ([b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405b2e1fcfe688f98096520a828b5d098ed3))
+
+## [2.12.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.5...@ant-design/pro-field@2.12.6) (2023-09-18)
+
+### Bug Fixes
+
+- **form:** 修复 treeSelect 组件 bordered 属性无法生效 ([#7687](https://github.com/ant-design/pro-components/issues/7687)) ([695f5a6](https://github.com/ant-design/pro-components/commit/695f5a695112be92f9300966b52536b5edda1196))
+
+## [2.12.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.4...@ant-design/pro-field@2.12.5) (2023-09-14)
+
+### Bug Fixes
+
+- **form:** 优化 PassWord 展现形式 ([#7657](https://github.com/ant-design/pro-components/issues/7657)) ([e5ebbe5](https://github.com/ant-design/pro-components/commit/e5ebbe532c97b72e8fa22378e3ce0f0525fb0f87))
+
 ## [2.12.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-field@2.12.3...@ant-design/pro-field@2.12.4) (2023-09-06)
 
 ### Bug Fixes

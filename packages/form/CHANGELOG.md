@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.9...@ant-design/pro-form@2.18.10) (2023-09-19)
+
+**Note:** Version bump only for package @ant-design/pro-form
+
+## [2.18.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.8...@ant-design/pro-form@2.18.9) (2023-09-18)
+
+### Bug Fixes
+
+- **layout:** 默认宽度更改为 1152 ([84cc927](https://github.com/ant-design/pro-components/commit/84cc9274d5a161b171254b2039a78b2a6942b375))
+- **table:** less render function ([b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405b2e1fcfe688f98096520a828b5d098ed3))
+
+## [2.18.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.7...@ant-design/pro-form@2.18.8) (2023-09-18)
+
+### Bug Fixes
+
+- **form:** form list support readonly ([6407072](https://github.com/ant-design/pro-components/commit/6407072ea4cc3cc6d1d5a8d9f7bea99cdfc6b372))
+- **table:** EditableProTable reset FormItem grid ([c53ecce](https://github.com/ant-design/pro-components/commit/c53ecce5d82553f952b19db22903970f13a586a5))
+
+## [2.18.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.6...@ant-design/pro-form@2.18.7) (2023-09-14)
+
+**Note:** Version bump only for package @ant-design/pro-form
+
+## [2.18.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.5...@ant-design/pro-form@2.18.6) (2023-09-07)
+
+### Bug Fixes
+
+- **form:** 修复 DrawerForm With 控制权重失效的问题 ([#7642](https://github.com/ant-design/pro-components/issues/7642)) ([50d7e4e](https://github.com/ant-design/pro-components/commit/50d7e4e442bc9a93b885d499bda9273947e47381))
+
 ## [2.18.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.4...@ant-design/pro-form@2.18.5) (2023-09-06)
 
 ### Bug Fixes
