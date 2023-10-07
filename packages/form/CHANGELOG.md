@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.20.1...@ant-design/pro-form@2.21.0) (2023-09-26)
+
+### Features
+
+- **form:** LoginFormPage support backgroundVideoUrl ([6dc50b0](https://github.com/ant-design/pro-components/commit/6dc50b0eea177dac53fa16d354ae368766e001a6))
+
+## [2.20.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.20.0...@ant-design/pro-form@2.20.1) (2023-09-26)
+
+### Bug Fixes
+
+- **form:** fix Captcha style no work error ([f31381d](https://github.com/ant-design/pro-components/commit/f31381dab2fb966eb0223e33cabfd7d3af7b88fc))
+
+# [2.20.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.19.0...@ant-design/pro-form@2.20.0) (2023-09-26)
+
+### Features
+
+- **form:** support more style config ([b8c3954](https://github.com/ant-design/pro-components/commit/b8c39542ffc2d3c7909338c02738e84a3804f13a))
+
+# [2.19.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.11...@ant-design/pro-form@2.19.0) (2023-09-26)
+
+### Bug Fixes
+
+- **form:** the `onChange` event in `ProFormUploadButton` has been triggered multiple times ([#7732](https://github.com/ant-design/pro-components/issues/7732)) ([a76b18c](https://github.com/ant-design/pro-components/commit/a76b18c2f37d16285bcf973081834e3e95d33754))
+
+### Features
+
+- **form:** new LoginFormPage style ([#7734](https://github.com/ant-design/pro-components/issues/7734)) ([1bc5453](https://github.com/ant-design/pro-components/commit/1bc54531ad3aebac6fc8dc7904dc2299987951c5))
+
+## [2.18.11](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.10...@ant-design/pro-form@2.18.11) (2023-09-25)
+
+### Bug Fixes
+
+- **layout:** 统一 PageContainer 计算到 styles.ts 中 ([#7699](https://github.com/ant-design/pro-components/issues/7699)) ([ed5c61c](https://github.com/ant-design/pro-components/commit/ed5c61ced2bda9e0f6bab22f3c942792eec682b6))
+
 ## [2.18.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.18.9...@ant-design/pro-form@2.18.10) (2023-09-19)
 
 **Note:** Version bump only for package @ant-design/pro-form

@@ -2,7 +2,7 @@
   ProFormUploadButton,
   ProFormUploadDragger,
 } from '@ant-design/pro-form';
-import { act, fireEvent, render } from '@testing-library/react';
+import { act, cleanup, fireEvent, render } from '@testing-library/react';
 import { Form } from 'antd';
 import type { UploadFile } from 'antd/lib/upload/interface';
 import mock from 'xhr-mock';
@@ -31,6 +31,10 @@ export function setup() {
 
 export const teardown = mock.teardown.bind(mock);
 
+afterEach(() => {
+  cleanup();
+});
+
 describe('ProFormUpload', () => {
   const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
 
@@ -42,6 +46,7 @@ describe('ProFormUpload', () => {
 
   it('🏐 ProFormUploadButton support onChange', async () => {
     const fn = vi.fn();
+    const onChangeFn = vi.fn();
     const wrapper = render(
       <ProForm
         onValuesChange={(_, values) => {
@@ -51,6 +56,7 @@ describe('ProFormUpload', () => {
         <ProFormUploadButton
           action="http://upload.com"
           listType="text"
+          onChange={() => onChangeFn()}
           label="upload"
           name="files"
         />
@@ -69,6 +75,7 @@ describe('ProFormUpload', () => {
     });
     await waitForWaitTime(1000);
     expect(fn).toBeCalled();
+    expect(onChangeFn).toBeCalledTimes(3);
   });
 
   it('🏐 ProFormUploadButton support beforeUpload', async () => {

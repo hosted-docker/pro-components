@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.13](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.12...@ant-design/pro-descriptions@2.5.13) (2023-09-26)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.12](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.11...@ant-design/pro-descriptions@2.5.12) (2023-09-26)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.11](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.10...@ant-design/pro-descriptions@2.5.11) (2023-09-26)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.9...@ant-design/pro-descriptions@2.5.10) (2023-09-26)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.8...@ant-design/pro-descriptions@2.5.9) (2023-09-25)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
 ## [2.5.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.7...@ant-design/pro-descriptions@2.5.8) (2023-09-19)
 
 **Note:** Version bump only for package @ant-design/pro-descriptions

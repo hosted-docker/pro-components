@@ -1,4 +1,39 @@
-﻿## @ant-design/pro-components@2.6.23
+﻿## @ant-design/pro-components@2.6.28
+
+`2023-09-26`
+
+- feat(form): LoginFormPage support backgroundVideoUrl. [6dc50b0](https://github.com/ant-design/pro-components/commit/6dc50b0)
+
+## @ant-design/pro-components@2.6.27
+
+`2023-09-26`
+
+- fix(form): fix Captcha style no work error. [f31381d](https://github.com/ant-design/pro-components/commit/f31381d)
+
+## @ant-design/pro-components@2.6.26
+
+`2023-09-26`
+
+- feat(form): support more style config. [b8c3954](https://github.com/ant-design/pro-components/commit/b8c3954)
+
+## @ant-design/pro-components@2.6.25
+
+`2023-09-26`
+
+- fix(form): the `onChange` event in `ProFormUploadButton` has been triggered multiple times (#7732). [#7732](https://github.com/ant-design/pro-components/pull/#7732) [@kungege](https://github.com/kungege)
+- feat(form): new LoginFormPage style (#7734). [#7734](https://github.com/ant-design/pro-components/pull/#7734) [@chenshuai2144](https://github.com/chenshuai2144)
+- fix(table): unuse Tab.TabPanel (#7731). [#7731](https://github.com/ant-design/pro-components/pull/#7731) [@leshalv](https://github.com/leshalv)
+
+## @ant-design/pro-components@2.6.24
+
+`2023-09-25`
+
+- fix(layout): fix colorBgMenuElevated no extends colorBgHeader error. [d915ed1](https://github.com/ant-design/pro-components/commit/d915ed1)
+- fix(layout): 统一 PageContainer 计算到 styles.ts 中 (#7699). [#7699](https://github.com/ant-design/pro-components/pull/#7699) [@ONLY-yours](https://github.com/ONLY-yours)
+- fix(Table): 修改 search transform 类型 (#7708). [#7708](https://github.com/ant-design/pro-components/pull/#7708) [@linxianxi](https://github.com/linxianxi)
+- fix(table): 修复 editableFormRef hooks 未正确传递 deps 依赖导致 value 取值不是最新 (#7707). [#7707](https://github.com/ant-design/pro-components/pull/#7707) [@xliez](https://github.com/xliez)
+
+## @ant-design/pro-components@2.6.23
 
 `2023-09-20`
 
