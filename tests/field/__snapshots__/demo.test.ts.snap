@@ -1393,7 +1393,6 @@ Done in 9.70s.
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
     "skipLibCheck": true
   },
@@ -1906,7 +1905,8 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-input-number-input-wrap"
                       >
                         <input
-                          aria-valuemin="0"
+                          aria-valuemax="10000"
+                          aria-valuemin="1"
                           autocomplete="off"
                           class="ant-input-number-input"
                           placeholder="请输入"
@@ -2686,7 +2686,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
-                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="ant-select-selection-search-input"
@@ -3173,7 +3172,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
-                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="ant-select-selection-search-input"
@@ -3251,7 +3249,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
-                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="ant-select-selection-search-input"
@@ -4368,7 +4365,6 @@ Done in 9.70s.
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
     "skipLibCheck": true
   },
@@ -4418,7 +4414,7 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/search-value.tsx 
                 class="ant-form-item-control-input-content"
               >
                 <div
-                  class="ant-select ant-select-in-form-item ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search"
+                  class="ant-select ant-select-in-form-item ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-search"
                   style="width: 330px;"
                 >
                   <div
@@ -4432,7 +4428,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/search-value.tsx 
                         aria-controls="name_list"
                         aria-expanded="false"
                         aria-haspopup="listbox"
-                        aria-label="Search"
                         aria-owns="name_list"
                         autocomplete="off"
                         class="ant-select-selection-search-input"
@@ -4448,12 +4443,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/search-value.tsx 
                       请输入搜索关键字
                     </span>
                   </div>
-                  <span
-                    aria-hidden="true"
-                    class="ant-select-arrow"
-                    style="user-select: none;"
-                    unselectable="on"
-                  />
                 </div>
               </div>
             </div>
@@ -4534,7 +4523,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/search-value-auto
                             aria-controls="name_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
-                            aria-label="Search"
                             aria-owns="name_list"
                             autocomplete="off"
                             class="ant-select-selection-search-input"
@@ -4644,7 +4632,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/select-request.ts
                           aria-controls="select_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
-                          aria-label="Search"
                           aria-owns="select_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -4755,7 +4742,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/select-request.ts
                           aria-controls="select_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
-                          aria-label="Search"
                           aria-owns="select_list"
                           autocomplete="off"
                           class="ant-select-selection-search-input"
@@ -4879,7 +4865,7 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                       class="ant-spin-container"
                     >
                       <div
-                        class="ant-select ant-tree-select ant-select-in-form-item ant-pro-field-tree-select ant-select-focused ant-select-multiple ant-select-allow-clear ant-select-show-arrow ant-select-open ant-select-show-search"
+                        class="ant-select ant-tree-select ant-select-in-form-item ant-pro-field-tree-select ant-select-focused ant-select-multiple ant-select-allow-clear ant-select-open ant-select-show-search"
                         style="min-width: 60px; width: 330px;"
                       >
                         <div
@@ -4943,7 +4929,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                                   aria-controls="name_list"
                                   aria-expanded="true"
                                   aria-haspopup="listbox"
-                                  aria-label="Search"
                                   aria-owns="name_list"
                                   autocomplete="off"
                                   class="ant-select-selection-search-input"
@@ -4963,12 +4948,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                             </div>
                           </div>
                         </div>
-                        <span
-                          aria-hidden="true"
-                          class="ant-select-arrow"
-                          style="user-select: none;"
-                          unselectable="on"
-                        />
                         <span
                           aria-hidden="true"
                           class="ant-select-clear"
@@ -5037,7 +5016,7 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                       class="ant-spin-container"
                     >
                       <div
-                        class="ant-select ant-tree-select ant-select-in-form-item ant-pro-field-tree-select ant-select-multiple ant-select-allow-clear ant-select-show-arrow ant-select-show-search"
+                        class="ant-select ant-tree-select ant-select-in-form-item ant-pro-field-tree-select ant-select-multiple ant-select-allow-clear ant-select-show-search"
                         style="min-width: 60px; width: 330px;"
                       >
                         <div
@@ -5143,7 +5122,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                                   aria-controls="name2_list"
                                   aria-expanded="false"
                                   aria-haspopup="listbox"
-                                  aria-label="Search"
                                   aria-owns="name2_list"
                                   autocomplete="off"
                                   class="ant-select-selection-search-input"
@@ -5165,12 +5143,6 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
                             </div>
                           </div>
                         </div>
-                        <span
-                          aria-hidden="true"
-                          class="ant-select-arrow"
-                          style="user-select: none;"
-                          unselectable="on"
-                        />
                         <span
                           aria-hidden="true"
                           class="ant-select-clear"

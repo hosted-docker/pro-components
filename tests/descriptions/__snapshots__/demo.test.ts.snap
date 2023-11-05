@@ -34,7 +34,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/arr
               >
                 <button
                   class="ant-btn ant-btn-primary"
-                  style="flex: 1;"
                   type="button"
                 >
                   <span>
@@ -43,7 +42,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/arr
                 </button>
                 <button
                   class="ant-btn ant-btn-default"
-                  style="flex: 1;"
                   type="button"
                 >
                   <span>
@@ -801,7 +799,6 @@ Done in 9.70s.
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "declaration": true,
     "skipLibCheck": true
   },
@@ -856,21 +853,18 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/col
           >
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               链路
             </a>
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               报警
             </a>
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               查看
@@ -1273,9 +1267,7 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/cus
                 class="ant-pro-field-option"
                 style="display: flex; gap: 16px; align-items: center;"
               >
-                <a
-                  style="flex: 1;"
-                >
+                <a>
                   刷新
                 </a>
               </div>
@@ -1464,21 +1456,18 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/dyn
                     >
                       <a
                         rel="noopener noreferrer"
-                        style="flex: 1;"
                         target="_blank"
                       >
                         链路
                       </a>
                       <a
                         rel="noopener noreferrer"
-                        style="flex: 1;"
                         target="_blank"
                       >
                         报警
                       </a>
                       <a
                         rel="noopener noreferrer"
-                        style="flex: 1;"
                         target="_blank"
                       >
                         查看
@@ -1911,7 +1900,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/dyn
                                                     aria-controls="layout_list"
                                                     aria-expanded="false"
                                                     aria-haspopup="listbox"
-                                                    aria-label="Search"
                                                     aria-owns="layout_list"
                                                     autocomplete="off"
                                                     class="ant-select-selection-search-input"
@@ -2114,7 +2102,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/dyn
                                                     aria-controls="size_list"
                                                     aria-expanded="false"
                                                     aria-haspopup="listbox"
-                                                    aria-label="Search"
                                                     aria-owns="size_list"
                                                     autocomplete="off"
                                                     class="ant-select-selection-search-input"
@@ -2437,21 +2424,18 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/edi
               >
                 <a
                   rel="noopener noreferrer"
-                  style="flex: 1;"
                   target="_blank"
                 >
                   链路
                 </a>
                 <a
                   rel="noopener noreferrer"
-                  style="flex: 1;"
                   target="_blank"
                 >
                   报警
                 </a>
                 <a
                   rel="noopener noreferrer"
-                  style="flex: 1;"
                   target="_blank"
                 >
                   查看
@@ -3502,7 +3486,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/req
               >
                 <button
                   class="ant-btn ant-btn-primary"
-                  style="flex: 1;"
                   type="button"
                 >
                   <span>
@@ -3511,7 +3494,6 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/req
                 </button>
                 <button
                   class="ant-btn ant-btn-default"
-                  style="flex: 1;"
                   type="button"
                 >
                   <span>
@@ -3645,21 +3627,18 @@ exports[`descriptions demos > 📸 renders ./packages/descriptions/src/demos/use
           >
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               链路
             </a>
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               报警
             </a>
             <a
               rel="noopener noreferrer"
-              style="flex: 1;"
               target="_blank"
             >
               查看
