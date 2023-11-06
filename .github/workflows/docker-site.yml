@@ -36,7 +36,7 @@ jobs:
       - name: zip zite
         uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r _site.zip dist
+          args: zip -qq -r pro-components_site.zip dist
 
       - name: Generate release tag
         id: tag
@@ -49,4 +49,4 @@ jobs:
         uses: softprops/action-gh-release@v0.1.15
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: _site.zip
+          files: pro-components_site.zip
