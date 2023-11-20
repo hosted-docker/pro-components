@@ -3141,6 +3141,7 @@ exports[`form demos > 📸 renders ./packages/form/src/components/FieldSet/demos
                         >
                           <div
                             class="ant-color-picker-trigger ant-pro-field-color-picker"
+                            id="validate_other_color"
                             style="display: table-cell; width: 100%;"
                           >
                             <div
@@ -51825,7 +51826,7 @@ exports[`form demos > 📸 renders ./packages/form/src/demos/money.tsx correctly
                       placeholder="请输入"
                       role="spinbutton"
                       step="1"
-                      value="￥ 22.22"
+                      value="¥ 22.22"
                     />
                   </div>
                 </div>

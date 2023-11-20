@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.5...@ant-design/pro-form@2.23.0) (2023-11-20)
+
+### Features
+
+- **form:** ProFormCaptcha onTiming callback ([#7908](https://github.com/ant-design/pro-components/issues/7908)) ([b04a280](https://github.com/ant-design/pro-components/commit/b04a2809773df13959110e64179a6c36eb136c15))
+
+## [2.22.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.4...@ant-design/pro-form@2.22.5) (2023-11-15)
+
+### Bug Fixes
+
+- **form:** fix statusRender no work error ([a94f13e](https://github.com/ant-design/pro-components/commit/a94f13eeb9993c96d9f660a1f16e1255b701b04d))
+
+## [2.22.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.3...@ant-design/pro-form@2.22.4) (2023-11-15)
+
+### Bug Fixes
+
+- **form:** PasssWordStrength remove progressDom ([77099e4](https://github.com/ant-design/pro-components/commit/77099e4728c5539325109025c369598ae7e0df82))
+
+## [2.22.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.2...@ant-design/pro-form@2.22.3) (2023-11-15)
+
+### Bug Fixes
+
+- **form:** PasssWord statusRender support value ([5abe403](https://github.com/ant-design/pro-components/commit/5abe403aecc3d98b365c8b5fa75763f8b79a494d))
+- **form:** PasssWord use Progress step ([ee6beb6](https://github.com/ant-design/pro-components/commit/ee6beb6d35ec6b58a06e2357a7616dac09252b16))
+- **form:** PassWord getPercent support status ([7c1bf34](https://github.com/ant-design/pro-components/commit/7c1bf34115e2ff0eeafea4545261e35591347e3d))
+
+## [2.22.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.1...@ant-design/pro-form@2.22.2) (2023-11-15)
+
+### Bug Fixes
+
+- **form:** Password support strengthText ([fcade9f](https://github.com/ant-design/pro-components/commit/fcade9f3bce22cb032ad5c00a71fc22035e224d2))
+
+## [2.22.1](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.22.0...@ant-design/pro-form@2.22.1) (2023-11-15)
+
+### Bug Fixes
+
+- **form:** Password support popoverProps ([39aa69b](https://github.com/ant-design/pro-components/commit/39aa69b9b38f9cafe2e3df1c66da78d6c784ad6d))
+
+# [2.22.0](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.21.6...@ant-design/pro-form@2.22.0) (2023-11-14)
+
+### Features
+
+- **from:** ProForm support statusRender ([fb8b42e](https://github.com/ant-design/pro-components/commit/fb8b42e14175e2cdc4641c39b1f5059c98ae6d4d))
+
 ## [2.21.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-form@2.21.5...@ant-design/pro-form@2.21.6) (2023-10-26)
 
 ### Bug Fixes

@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.10](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.9...@ant-design/pro-table@3.13.10) (2023-11-20)
+
+### Bug Fixes
+
+- **table:** slove editable wrapper by null initvalue ([#7900](https://github.com/ant-design/pro-components/issues/7900)) ([c9cad09](https://github.com/ant-design/pro-components/commit/c9cad091682eeb3b0901f7e7dcbf9f5583ea31dd))
+
+## [3.13.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.8...@ant-design/pro-table@3.13.9) (2023-11-15)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.13.8](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.7...@ant-design/pro-table@3.13.8) (2023-11-15)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.13.7](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.6...@ant-design/pro-table@3.13.7) (2023-11-15)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.13.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.5...@ant-design/pro-table@3.13.6) (2023-11-15)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.13.5](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.4...@ant-design/pro-table@3.13.5) (2023-11-15)
+
+**Note:** Version bump only for package @ant-design/pro-table
+
+## [3.13.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.3...@ant-design/pro-table@3.13.4) (2023-11-14)
+
+### Bug Fixes
+
+- **table:** less render function ([b314a37](https://github.com/ant-design/pro-components/commit/b314a37b2c3de7afeba877d07963403b4ebc8a3d))
+
 ## [3.13.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-table@3.13.2...@ant-design/pro-table@3.13.3) (2023-11-01)
 
 ### Bug Fixes
