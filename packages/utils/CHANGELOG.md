@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.4](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.15.3...@ant-design/pro-utils@2.15.4) (2024-01-15)
+
+### Bug Fixes
+
+- **form:** 修复 dateFormatter 使用 string 类型提示错误 ([#8029](https://github.com/ant-design/pro-components/issues/8029)) ([6d764ad](https://github.com/ant-design/pro-components/commit/6d764ad498405ad59f4fda71db1b0c632d8150a1))
+
+## [2.15.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.15.2...@ant-design/pro-utils@2.15.3) (2023-12-12)
+
+**Note:** Version bump only for package @ant-design/pro-utils
+
 ## [2.15.2](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.15.1...@ant-design/pro-utils@2.15.2) (2023-11-22)
 
 **Note:** Version bump only for package @ant-design/pro-utils
@@ -193,8 +203,8 @@ All notable changes to this project will be documented in this file. See [Conven
 
 - **compoents:** gap use token margin ([#7204](https://github.com/ant-design/pro-components/issues/7204)) ([bd62243](https://github.com/ant-design/pro-components/commit/bd62243f4bc6a3ea6e97ad5e0db977c84394426f))
 - **components:** remove hashid empty ([b46bb80](https://github.com/ant-design/pro-components/commit/b46bb808db287979fe7d2d5afe115185860422c9))
-- **form:** 修复 fn[curK] 为函数时，参数 undefined 导致的报错 ([#7163](https://github.com/ant-design/pro-components/issues/7163)) ([ac8c651](https://github.com/ant-design/pro-components/commit/ac8c6516dcdcaca758ed489829dd9b109363c063))
-- **layout:** support antd@5.6 token ([28291fe](https://github.com/ant-design/pro-components/commit/28291fea2ab1417640f79534d132b5e3db228d2c))
+- **form:** 修复 fn \[curK] 为函数时，参数 undefined 导致的报错 ([#7163](https://github.com/ant-design/pro-components/issues/7163)) ([ac8c651](https://github.com/ant-design/pro-components/commit/ac8c6516dcdcaca758ed489829dd9b109363c063))
+- **layout:** support antd\@5.6 token ([28291fe](https://github.com/ant-design/pro-components/commit/28291fea2ab1417640f79534d132b5e3db228d2c))
 - **table:** 修复 Editable 的 record.id 使用 index，且 index 为 0 时，导致无法添加新行 ([#7176](https://github.com/ant-design/pro-components/issues/7176)) ([b62443c](https://github.com/ant-design/pro-components/commit/b62443c3f310f99b5912a4cb9f2da5dd74cb5ac3))
 
 ## [2.11.3](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.11.2...@ant-design/pro-utils@2.11.3) (2023-05-31)
@@ -275,7 +285,7 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ### Bug Fixes
 
-- **form:** 兼容 antd@4 ProFormTimePicker format 异常问题 ([#6863](https://github.com/ant-design/pro-components/issues/6863)) ([76131bb](https://github.com/ant-design/pro-components/commit/76131bb38a3426a2ded4d92cfc12c94e40fc685c)), closes [#6862](https://github.com/ant-design/pro-components/issues/6862)
+- **form:** 兼容 antd\@4 ProFormTimePicker format 异常问题 ([#6863](https://github.com/ant-design/pro-components/issues/6863)) ([76131bb](https://github.com/ant-design/pro-components/commit/76131bb38a3426a2ded4d92cfc12c94e40fc685c)), closes [#6862](https://github.com/ant-design/pro-components/issues/6862)
 - **form:** 修复 SchemaFormRef 的问题 ([#6943](https://github.com/ant-design/pro-components/issues/6943)) ([445c8ac](https://github.com/ant-design/pro-components/commit/445c8acfe3677d3d03a2a9c12d2a9542d50d10c0))
 - **table:** new fetch function ([#6923](https://github.com/ant-design/pro-components/issues/6923)) ([275e9c1](https://github.com/ant-design/pro-components/commit/275e9c108ec939f13dbea002b5d287a074fce42e))
 
@@ -308,7 +318,7 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ### Features
 
-- **components:** support antd@5.4.0 ([#6730](https://github.com/ant-design/pro-components/issues/6730)) ([1ac506f](https://github.com/ant-design/pro-components/commit/1ac506f8e46a30089437cdfe58a5f96447c39f7a))
+- **components:** support antd\@5.4.0 ([#6730](https://github.com/ant-design/pro-components/issues/6730)) ([1ac506f](https://github.com/ant-design/pro-components/commit/1ac506f8e46a30089437cdfe58a5f96447c39f7a))
 - **layout:** add ProHelp components ([#6654](https://github.com/ant-design/pro-components/issues/6654)) ([b1a175c](https://github.com/ant-design/pro-components/commit/b1a175c9ecbdf24a26f1cf34e10a92da05ab2b9c)), closes [#6671](https://github.com/ant-design/pro-components/issues/6671) [#6676](https://github.com/ant-design/pro-components/issues/6676)
 
 ## [2.5.9](https://github.com/ant-design/pro-components/compare/@ant-design/pro-utils@2.5.8...@ant-design/pro-utils@2.5.9) (2023-02-28)

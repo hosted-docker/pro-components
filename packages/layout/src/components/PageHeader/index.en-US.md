@@ -18,7 +18,7 @@ PageHeader can be used to highlight the page topic, display important informatio
 | Param | Description | Type | Default value | Version |
 | --- | --- | --- | --- | --- |
 | avatar | Avatar next to the title bar | [AvatarProps](/components/avatar/) | - |  |
-| backIcon | Custom back icon, if false the back icon will not be displayed | ReactNode \| boolean | &lt;ArrowLeft /> |  |
+| backIcon | Custom back icon, if false the back icon will not be displayed | ReactNode \| boolean | \<ArrowLeft /> |  |
 | breadcrumb | Breadcrumb configuration | [Breadcrumb](/components/breadcrumb/) | - |  |
 | breadcrumbRender | Customize the content of the breadcrumb area | `(props, originBreadcrumb)=> ReactNode` | - | 4.11.0 |
 | extra | Operating area, at the end of the line of the title line | ReactNode | - |  |

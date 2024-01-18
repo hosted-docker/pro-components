@@ -16,8 +16,11 @@ Step-by-step forms, Modal forms, Drawer forms, Query forms, Lightweight filters 
 - If you want to set default values, please use `initialValues`, any direct use of component `value` and `onChange` may cause value binding failure.
 
 - If you want to link forms or do some dependencies, you can use render props mode, ProFormDependency is definitely the best choice
+
 - ProForm's onFinish, unlike antd's Form, is a Promise that will automatically set the button to load for you if you return normally.
+
 - If you want to listen to a value, it is recommended to use `onValuesChange`. Keeping a unidirectional data flow is a great benefit for both developers and maintainers
+
 - ProForm has no black technology, it's just a wrapper for antd's Form, if you want to use a custom component you can wrap it with Form.
 
 ```tsx | pure
@@ -273,7 +276,7 @@ While we would prefer not to modify the submitter, it is a common requirement to
 | resetButtonProps | The props for the reset button | [ButtonProps](https://ant.design/components/button/) | - |
 | render | Rendering of custom actions | `false` \|`(props,dom:JSX[])=>ReactNode[]` | - |
 
-The second argument to > render is the default dom array, the first is the reset button and the second is the submit button.
+The second argument to > render is the default dom array, the first is the submit button and the second is the reset button.
 
 ```tsx | pure
 <ProForm

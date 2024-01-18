@@ -18,7 +18,7 @@ cover: https://gw.alipayobjects.com/zos/alicdn/6bKE0Cq0R/PageHeader.svg
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | avatar | 标题栏旁的头像 | [AvatarProps](/components/avatar/) | - |  |
-| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode \| boolean | &lt;ArrowLeft /> |  |
+| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode \| boolean | \<ArrowLeft /> |  |
 | breadcrumb | 面包屑的配置 | [Breadcrumb](/components/breadcrumb/) | - |  |
 | breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |
 | extra | 操作区，位于 title 行的行尾 | ReactNode | - |  |

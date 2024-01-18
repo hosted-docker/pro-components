@@ -3,7 +3,7 @@
 exports[`Field > 🐴 base use 1`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -108,7 +108,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <span
-                    class="ant-input-affix-wrapper"
+                    class="ant-input-affix-wrapper ant-input-outlined"
                   >
                     <input
                       class="ant-input"
@@ -346,7 +346,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -442,7 +442,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -534,7 +534,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-select ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow"
+                    class="ant-select ant-select-outlined ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow"
                     style="min-width: 100px;"
                   >
                     <div
@@ -616,7 +616,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-select ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-loading"
+                    class="ant-select ant-select-outlined ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-loading"
                     style="min-width: 100px;"
                   >
                     <div
@@ -694,7 +694,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -790,7 +790,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-picker"
+                    class="ant-picker ant-picker-outlined"
                   >
                     <div
                       class="ant-picker-input"
@@ -847,7 +847,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-picker"
+                    class="ant-picker ant-picker-outlined"
                   >
                     <div
                       class="ant-picker-input"
@@ -1110,7 +1110,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-picker"
+                    class="ant-picker ant-picker-outlined"
                   >
                     <div
                       class="ant-picker-input"
@@ -1170,7 +1170,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <span
-                    class="ant-input-affix-wrapper ant-input-password"
+                    class="ant-input-affix-wrapper ant-input-outlined ant-input-password"
                   >
                     <input
                       class="ant-input"
@@ -1229,7 +1229,7 @@ exports[`Field > 🐴 edit and no plain 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <textarea
-                    class="ant-input"
+                    class="ant-input ant-input-outlined"
                     rows="5"
                   >
                     yarn run v1.22.0
@@ -1256,7 +1256,7 @@ Done in 9.70s.
                   class="ant-descriptions-item-content"
                 >
                   <textarea
-                    class="ant-input"
+                    class="ant-input ant-input-outlined"
                     rows="5"
                   >
                     {
@@ -1321,7 +1321,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <span
-                    class="ant-input-affix-wrapper"
+                    class="ant-input-affix-wrapper ant-input-outlined"
                   >
                     <input
                       class="ant-input"
@@ -1559,7 +1559,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -1655,7 +1655,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -1747,7 +1747,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-select ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow"
+                    class="ant-select ant-select-outlined ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow"
                     style="min-width: 100px;"
                   >
                     <div
@@ -1829,7 +1829,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-select ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-loading"
+                    class="ant-select ant-select-outlined ant-pro-filed-search-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-loading"
                     style="min-width: 100px;"
                   >
                     <div
@@ -1907,7 +1907,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <div
-                    class="ant-input-number"
+                    class="ant-input-number ant-input-number-outlined"
                   >
                     <div
                       class="ant-input-number-handler-wrap"
@@ -2383,7 +2383,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <span
-                    class="ant-input-affix-wrapper ant-input-password"
+                    class="ant-input-affix-wrapper ant-input-outlined ant-input-password"
                   >
                     <input
                       class="ant-input"
@@ -2442,7 +2442,7 @@ exports[`Field > 🐴 edit and plain=true 1`] = `
                   class="ant-descriptions-item-content"
                 >
                   <input
-                    class="ant-input"
+                    class="ant-input ant-input-outlined"
                     type="text"
                     value="
 yarn run v1.22.0
@@ -2469,7 +2469,7 @@ Done in 9.70s.
                   class="ant-descriptions-item-content"
                 >
                   <input
-                    class="ant-input"
+                    class="ant-input ant-input-outlined"
                     type="text"
                     value="{
   \\"compilerOptions\\": {
@@ -2507,7 +2507,7 @@ Done in 9.70s.
 exports[`Field > 🐴 money valueType is Object 1`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -2586,7 +2586,7 @@ exports[`Field > 🐴 money valueType is Object 1`] = `
 exports[`Field > 🐴 money valueType is Object 2`] = `
 <DocumentFragment>
   <span>
-    $100.00
+    100.00
   </span>
 </DocumentFragment>
 `;
@@ -2594,7 +2594,7 @@ exports[`Field > 🐴 money valueType is Object 2`] = `
 exports[`Field > 🐴 money valueType is Object 3`] = `
 <DocumentFragment>
   <span>
-    $$100.00
+    $100.00
   </span>
 </DocumentFragment>
 `;
@@ -2602,7 +2602,7 @@ exports[`Field > 🐴 money valueType is Object 3`] = `
 exports[`Field > 🐴 money valueType is Object 4`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -2697,7 +2697,7 @@ exports[`Field > 🐴 money valueType is Object 6`] = `
 exports[`Field > 🐴 money valueType is Object 7`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -2776,7 +2776,7 @@ exports[`Field > 🐴 money valueType is Object 7`] = `
 exports[`Field > 🐴 money valueType is Object 8`] = `
 <DocumentFragment>
   <span>
-    RM 100.00
+    100.00
   </span>
 </DocumentFragment>
 `;
@@ -2784,7 +2784,7 @@ exports[`Field > 🐴 money valueType is Object 8`] = `
 exports[`Field > 🐴 money valueType is Object 9`] = `
 <DocumentFragment>
   <span>
-    RMRM 100.00
+    RM100.00
   </span>
 </DocumentFragment>
 `;
@@ -2792,7 +2792,7 @@ exports[`Field > 🐴 money valueType is Object 9`] = `
 exports[`Field > 🐴 money valueType is Object 10`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -2962,7 +2962,7 @@ exports[`Field > 🐴 percent support unit string 1`] = `
 exports[`Field > 🐴 percent valueType is Object 1`] = `
 <DocumentFragment>
   <div
-    class="ant-input-number"
+    class="ant-input-number ant-input-number-outlined"
   >
     <div
       class="ant-input-number-handler-wrap"
@@ -3065,7 +3065,7 @@ exports[`Field > 🐴 progress support no number 1`] = `
       >
         <div
           class="ant-progress-bg"
-          style="width: 0%; height: 6px;"
+          style="width: 0%; height: 6px; --progress-percent: 0;"
         />
       </div>
     </div>
@@ -3096,7 +3096,7 @@ exports[`Field > 🐴 progress support string number 1`] = `
       >
         <div
           class="ant-progress-bg"
-          style="width: 12%; height: 6px;"
+          style="width: 12%; height: 6px; --progress-percent: 0.12;"
         />
       </div>
     </div>
@@ -3206,7 +3206,9 @@ exports[`Field > 🐴 read and plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15
                     </div>
@@ -3484,7 +3486,9 @@ exports[`Field > 🐴 read and plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15 12:50:26
                     </div>
@@ -3510,7 +3514,9 @@ exports[`Field > 🐴 read and plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15 12:50:26
                     </div>
@@ -3785,7 +3791,9 @@ exports[`Field > 🐴 read ant no plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15
                     </div>
@@ -3957,7 +3965,7 @@ exports[`Field > 🐴 read ant no plain 1`] = `
                       >
                         <div
                           class="ant-progress-bg"
-                          style="width: 40%; height: 6px;"
+                          style="width: 40%; height: 6px; --progress-percent: 0.4;"
                         />
                       </div>
                     </div>
@@ -4032,7 +4040,9 @@ exports[`Field > 🐴 read ant no plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15 12:50:26
                     </div>
@@ -4058,7 +4068,9 @@ exports[`Field > 🐴 read ant no plain 1`] = `
                 <span
                   class="ant-descriptions-item-content"
                 >
-                  <div>
+                  <div
+                    style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"
+                  >
                     <div>
                       2019-11-15 12:50:26
                     </div>

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Schema Form
 order: 1
 atomId: BetaSchemaForm

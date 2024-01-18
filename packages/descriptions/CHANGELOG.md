@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.30](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.29...@ant-design/pro-descriptions@2.5.30) (2024-01-15)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.29](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.28...@ant-design/pro-descriptions@2.5.29) (2024-01-15)
+
+**Note:** Version bump only for package @ant-design/pro-descriptions
+
+## [2.5.28](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.27...@ant-design/pro-descriptions@2.5.28) (2023-12-12)
+
+### Bug Fixes
+
+- **Descriptions:** fix emptytext alway set error ([85f1366](https://github.com/ant-design/pro-components/commit/85f1366383cd9308f8197a1d2ea87e07602ceb70))
+
 ## [2.5.27](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.5.26...@ant-design/pro-descriptions@2.5.27) (2023-11-22)
 
 **Note:** Version bump only for package @ant-design/pro-descriptions
@@ -213,7 +227,7 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ### Bug Fixes
 
-- **components:** fix useToken no supoort antd@4 的问题 ([58b96e9](https://github.com/ant-design/pro-components/commit/58b96e91632c0c84c429d5384c13ee6f3146e017))
+- **components:** fix useToken no supoort antd\@4 的问题 ([58b96e9](https://github.com/ant-design/pro-components/commit/58b96e91632c0c84c429d5384c13ee6f3146e017))
 
 ## [2.3.6](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.3.5...@ant-design/pro-descriptions@2.3.6) (2023-06-12)
 
@@ -311,7 +325,7 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ### Features
 
-- **components:** support antd@5.4.0 ([#6730](https://github.com/ant-design/pro-components/issues/6730)) ([1ac506f](https://github.com/ant-design/pro-components/commit/1ac506f8e46a30089437cdfe58a5f96447c39f7a))
+- **components:** support antd\@5.4.0 ([#6730](https://github.com/ant-design/pro-components/issues/6730)) ([1ac506f](https://github.com/ant-design/pro-components/commit/1ac506f8e46a30089437cdfe58a5f96447c39f7a))
 - **layout:** add ProHelp components ([#6654](https://github.com/ant-design/pro-components/issues/6654)) ([b1a175c](https://github.com/ant-design/pro-components/commit/b1a175c9ecbdf24a26f1cf34e10a92da05ab2b9c)), closes [#6671](https://github.com/ant-design/pro-components/issues/6671) [#6676](https://github.com/ant-design/pro-components/issues/6676)
 
 ## [2.0.49](https://github.com/ant-design/pro-components/compare/@ant-design/pro-descriptions@2.0.48...@ant-design/pro-descriptions@2.0.49) (2023-02-28)

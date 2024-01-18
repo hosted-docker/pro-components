@@ -69,7 +69,7 @@ ProLayout will automatically select the menu based on `location.pathname` and au
 | logo | url to the top-left corner of layout's logo | `ReactNode` \| `()=> ReactNode` | - |
 | pure | Whether to remove all self-contained interfaces | `boolean` | - |
 | loading | The loading state of the layout | `boolean` | - |
-| location | The location information of the current application session. If your application creates a custom history, you will need to display the location attribute as described in [issue](https://github.com/ant-design/pro-components/issues/327) | [history.location](https://reactrouter.com/web/api/history) | isBrowser ? window.location : undefined |
+| location | The location information of the current application session. If your application creates a custom history, you will need to display the location attribute as described in [issue](https://github.com/ant-design/pro-components/issues/327) | [history.location](https://reactrouter.com/web/api/history) | isBrowser ? window\.location : undefined |
 | menuHeaderRender | render logo and title, has a higher priority than `headerTitleRender` | `ReactNode` \| `(logo,title)=>ReactNode` | - |
 | menuFooterRender | Render a block at the bottom of the layout | `(menuProps)=>ReactNode` | - |
 | onMenuHeaderClick | menu menu menu's header click event | `(e: React.MouseEvent<HTMLDivElement>) => void` | - |
@@ -108,7 +108,7 @@ ProLayout will automatically select the menu based on `location.pathname` and au
 | disableMobile | disable automatic switching to mobile pages | `boolean` | false |
 | ErrorBoundary | Comes with error handling function to prevent blank screen. `ErrorBoundary=false` turn off default ErrorBoundary | `ReactNode` | default ErrorBoundary |
 | links | Show shortcut actions in the lower right corner of the menu | `ReactNode[]` | - |
-| menuProps | The props passed to the antd menu component, see (https://ant.design/components/menu/) | `MenuProps` | undefined |
+| menuProps | The props passed to the antd menu component, see (<https://ant.design/components/menu/>) | `MenuProps` | undefined |
 | waterMarkProps | Configure watermark, watermark is a function of PageContainer, layout is only transparently transmitted to PageContainer | [WaterMarkProps](/components/water-mark) | - |
 
 ### SettingDrawer
@@ -120,8 +120,8 @@ ProLayout will automatically select the menu based on `location.pathname` and au
 | hideHintAlert | Delete the prompt message below | `boolean` | - |
 | hideCopyButton | Do not show copy function | `boolean` | - |
 | disableUrlParams | Disable synchronization settings to query parameters | `boolean` | `false` |
-| enableDarkTheme | Turn on black theme switching function ｜ `boolean` | `false` |
-| colorList | Built-in color switching system ｜ `{key,color}[]` | `ColorList` |
+| enableDarkTheme | Turn on black theme switching function ｜ `boolean` | `false` |  |
+| colorList | Built-in color switching system ｜ `{key,color}[]` | `ColorList` |  |
 
 Built-in color list
 
@@ -164,7 +164,7 @@ const Page = () => (
 
 ### GridContent
 
-GridContent encapsulates the [equal-width](https://preview.pro.ant.design/dashboard/analysis?layout=top&contentWidth=Fixed) and [flow](https://preview.pro. ant.design/dashboard/analysis?layout=top) logic. You can see the preview effect in [preview](https://preview.pro.ant.design/dashboard/analysis).
+GridContent encapsulates the [equal-width](https://preview.pro.ant.design/dashboard/analysis?layout=top&contentWidth=Fixed) and \[flow]\(<https://preview.pro>. ant.design/dashboard/analysis?layout=top) logic. You can see the preview effect in [preview](https://preview.pro.ant.design/dashboard/analysis).
 
 | parameters   | description | type               | default |
 | ------------ | ----------- | ------------------ | ------- |
@@ -185,7 +185,7 @@ const { breadcrumb, menuData } = getMenuData(
 
 | parameters | description | type | default |
 | --- | --- | --- | --- |
-| routes | The configuration information for the route | [route[]](#route) | - |
+| routes | The configuration information for the route | [route\[\]](#route) | - |
 | menu | The configuration entry for menu, default `{locale: true}` | `{ locale: boolean }` | - |
 | menuDataRender | The render method of menuData, used to customize menuData | `(menuData: MenuDataItem[]) => MenuDataItem[]` | - |
 | formatMessage | The formatMessage method of react-intl | `(data: { id: any; defaultMessage?: string }) => string;` | - |

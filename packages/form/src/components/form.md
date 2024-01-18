@@ -196,6 +196,38 @@ formRef 内置了几个方法来获取转化之后的值，这也是相比 antd 
 
 <code src="../demos/pro-form-editableTable.tsx" title="ProForm 和 EditableTable 同时使用"></code>
 
+## 劫持渲染函数的组件
+
+FormItemRender 用来专门处理，采用 render props 的方式来组织代码，更好的聚合带请求的业务代码，也更好的完成自定义表单项的功能
+
+在中后台项目表单是必不可少的，通常还伴随着一些非标准控件、复杂的表单项，此时需要借助自定义表单项，而完成一个自定义表单项至少需要完成 value 和 onChange 的实现。而如果该组件只被使用一次且需要的上下文参数很多，那么封装起来就是很不讨好，因此就有了该组件。
+
+- 使用 useControlModel 来快速的创建一个自定义表单项，同时支持单实例或多实例（适用于封装自定义表单组件，在多个地方使用的场景）
+- 使用 withFormItemRender 来生成一个 FormItemRender，可以以内联的方式去组织代码（适用于只被使用一次或需要的上下文参数很多的场景）
+- 使用 FormControlRender 来把一个 form 组件转换成 render props 的形式，在特定情况下是很有用的（例如@alipay/techui-rule-tree 组件的一些设计缺陷，render 里面的组件不能调用 onChange 方法，这个时候包裹一下就可以解决）
+
+> 当然，也不一定非要用 withFormItemRender，Form.Item 是可以嵌套使用，也可以 Form.Item 嵌套外层设置 noStyle 的方式来组织你的代码，这样会多一些 div 的元素包裹，如果对你样式没有影响也可以使用
+
+### 使用 useControlModel
+
+从一个官网例子开始[自定义表单项](https://ant.design/components/form-cn#components-form-demo-customized-form-controls)
+
+<code src="../demos/antd.tsx" description="官网例子"></code> <code src="../demos/antd.modify.tsx" description="使用和hooks改造"></code> <code src="../demos/antd.nest.tsx" description="嵌套使用"></code>
+
+### FormControlRender
+
+使用 FormControlRender 既可以内联的书写代码，又可以更灵活的编写逻辑，适用于一些组件外层包裹了 ProForm.Item 或者 Form.Item。
+
+有的时候需要使用 Form.Item.useStatus，但必须满足 hooks 的使用规范，这使得开发就必须提取成单独的组件来使用，没办法内联使用，而 FormControlRender 很好的解决这种情况
+
+<code src="../demos/form-control-render.tsx"></code>
+
+### FormItemRender & ProFormItemRender
+
+使用 FormItemRender 或者 ProFormItemRender 可以更方便的在 Form 里书写表单项
+
+<code src="../demos/form-item-render.tsx"></code>
+
 <code src="../demos/linkage-customization.tsx" debug></code>
 
 <code src="../demos/pro-form-dependency.debug.tsx"  debug></code>
@@ -286,7 +318,7 @@ ProFormInstance 与 antd 的 form 相比增加了一些能力。
 | resetButtonProps | 重置按钮的 props | [ButtonProps](https://ant.design/components/button-cn/) | - |
 | render | 自定义操作的渲染 | `false`\|`(props,dom:JSX[])=>ReactNode[]` | - |
 
-> render 的第二个参数是默认的 dom 数组，第一个是重置按钮，第二个是提交按钮。
+> render 的第二个参数是默认的 dom 数组，第一个是提交按钮，第二个是重置按钮。
 
 ```tsx | pure
 <ProForm

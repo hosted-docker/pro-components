@@ -100,7 +100,8 @@ const TopNavHeader: React.FC<TopNavHeaderProps> = (
                   token.layout?.header?.colorTextMenuSelected ||
                   'rgba(0, 0, 0, 1)',
                 popupBg: token?.colorBgElevated,
-                // @ts-expect-error
+                subMenuItemBg: token?.colorBgElevated,
+                darkSubMenuItemBg: 'transparent',
                 darkPopupBg: token?.colorBgElevated,
               }),
             },

@@ -22,11 +22,11 @@ StepsForm 通过 Provider 来管理子表单的数据，每个子表单都是完
 
 <code src="./demos/customize-steps-from.tsx" title="自定义分步表单按钮"></code>
 
-## 分步表单-多卡片
+## 分步表单 - 多卡片
 
 <code src="./demos/multi-card-step-form.tsx"  background="var(--main-bg-color)" title="分步表单-多卡片"></code>
 
-## 分步表单-与 Modal 配合使用
+## 分步表单 - 与 Modal 配合使用
 
 <code src="./demos/modal-step-form.tsx"  background="var(--main-bg-color)" title="分步表单-与 Modal 配合使用"></code>
 
@@ -51,4 +51,6 @@ StepsForm 通过 Provider 来管理子表单的数据，每个子表单都是完
 
 与 [ProForm](/components/form) 完全相同，只是 onFinish 支持了 Promise，如果返回 `false`, 就不会跳转下一步。
 
-| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | - |
+| 参数     | 说明             | 类型                         | 默认值 |
+| -------- | ---------------- | ---------------------------- | ------ |
+| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |
