@@ -137,7 +137,7 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base.tsx correctl
                   >
                     <span
                       class="ant-avatar ant-avatar-circle ant-avatar-image"
-                      style="width: 22px; height: 22px; line-height: 22px; font-size: 18px;"
+                      style="width: 22px; height: 22px; font-size: 18px;"
                     >
                       <img
                         src="https://avatars2.githubusercontent.com/u/8186664?s=60&v=4"
@@ -1560,7 +1560,7 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                   >
                     <span
                       class="ant-avatar ant-avatar-circle ant-avatar-image"
-                      style="width: 22px; height: 22px; line-height: 22px; font-size: 18px;"
+                      style="width: 22px; height: 22px; font-size: 18px;"
                     >
                       <img
                         src="https://avatars2.githubusercontent.com/u/8186664?s=60&v=4"
@@ -1589,10 +1589,11 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                     class="ant-descriptions-item-content"
                   >
                     <span
-                      class="ant-input-affix-wrapper ant-input-outlined"
+                      class="ant-input-affix-wrapper ant-input-disabled ant-input-affix-wrapper-disabled ant-input-outlined"
                     >
                       <input
-                        class="ant-input"
+                        class="ant-input ant-input-disabled"
+                        disabled=""
                         placeholder="请输入"
                         type="text"
                         value=""
@@ -3674,11 +3675,10 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
                           placeholder="请选择"
-                          readonly=""
                           size="21"
-                          title=""
                           value=""
                         />
                         <span
@@ -3741,11 +3741,10 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                             class="ant-picker-input"
                           >
                             <input
+                              aria-invalid="false"
                               autocomplete="off"
                               placeholder="请选择"
-                              readonly=""
                               size="21"
-                              title=""
                               value=""
                             />
                             <span
@@ -3784,11 +3783,10 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                             class="ant-picker-input"
                           >
                             <input
+                              aria-invalid="false"
                               autocomplete="off"
                               placeholder="请选择"
-                              readonly=""
                               size="21"
-                              title=""
                               value=""
                             />
                             <span
@@ -3843,11 +3841,10 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
                           placeholder="请选择"
-                          readonly=""
                           size="12"
-                          title=""
                           value=""
                         />
                         <span
@@ -3898,15 +3895,16 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                     class="ant-descriptions-item-content"
                   >
                     <div
-                      class="ant-picker ant-picker-range ant-picker-borderless"
+                      class="ant-picker ant-picker-range ant-picker-outlined"
                     >
                       <div
-                        class="ant-picker-input ant-picker-input-active"
+                        class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="start"
                           placeholder="请选择"
-                          readonly=""
                           size="12"
                           value=""
                         />
@@ -3943,16 +3941,17 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="end"
                           placeholder="请选择"
-                          readonly=""
                           size="12"
                           value=""
                         />
                       </div>
                       <div
                         class="ant-picker-active-bar"
-                        style="left: 0px; width: 0px; position: absolute;"
+                        style="position: absolute; width: 0px; left: 0px;"
                       />
                       <span
                         class="ant-picker-suffix"
@@ -3997,15 +3996,16 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                     class="ant-descriptions-item-content"
                   >
                     <div
-                      class="ant-picker ant-picker-range ant-picker-borderless"
+                      class="ant-picker ant-picker-range ant-picker-outlined"
                     >
                       <div
-                        class="ant-picker-input ant-picker-input-active"
+                        class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="start"
                           placeholder="请选择"
-                          readonly=""
                           size="21"
                           value=""
                         />
@@ -4042,16 +4042,17 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="end"
                           placeholder="请选择"
-                          readonly=""
                           size="21"
                           value=""
                         />
                       </div>
                       <div
                         class="ant-picker-active-bar"
-                        style="left: 0px; width: 0px; position: absolute;"
+                        style="position: absolute; width: 0px; left: 0px;"
                       />
                       <span
                         class="ant-picker-suffix"
@@ -4106,11 +4107,10 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
                           placeholder="Select time"
-                          readonly=""
                           size="10"
-                          title=""
                           value=""
                         />
                         <span
@@ -4163,12 +4163,13 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                       class="ant-picker ant-picker-range ant-picker-outlined"
                     >
                       <div
-                        class="ant-picker-input ant-picker-input-active"
+                        class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="start"
                           placeholder="Start time"
-                          readonly=""
                           size="10"
                           value=""
                         />
@@ -4205,16 +4206,17 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/base_test.tsx cor
                         class="ant-picker-input"
                       >
                         <input
+                          aria-invalid="false"
                           autocomplete="off"
+                          date-range="end"
                           placeholder="End time"
-                          readonly=""
                           size="10"
                           value=""
                         />
                       </div>
                       <div
                         class="ant-picker-active-bar"
-                        style="left: 0px; width: 0px; position: absolute;"
+                        style="position: absolute; width: 0px; left: 0px;"
                       />
                       <span
                         class="ant-picker-suffix"
@@ -4682,19 +4684,19 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/select-request.ts
           style="display: flex; gap: 8px; align-items: center;"
         >
           <button
-            class="ant-btn ant-btn-primary"
-            type="button"
-          >
-            <span>
-              提 交
-            </span>
-          </button>
-          <button
             class="ant-btn ant-btn-default"
             type="button"
           >
             <span>
               重 置
+            </span>
+          </button>
+          <button
+            class="ant-btn ant-btn-primary"
+            type="button"
+          >
+            <span>
+              提 交
             </span>
           </button>
         </div>
@@ -4792,19 +4794,19 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/select-request.ts
           style="display: flex; gap: 8px; align-items: center;"
         >
           <button
-            class="ant-btn ant-btn-primary"
-            type="button"
-          >
-            <span>
-              提 交
-            </span>
-          </button>
-          <button
             class="ant-btn ant-btn-default"
             type="button"
           >
             <span>
               重 置
+            </span>
+          </button>
+          <button
+            class="ant-btn ant-btn-primary"
+            type="button"
+          >
+            <span>
+              提 交
             </span>
           </button>
         </div>
@@ -5203,19 +5205,19 @@ exports[`field demos > 📸 renders ./packages/field/src/demos/tree-select-searc
           style="display: flex; gap: 8px; align-items: center;"
         >
           <button
-            class="ant-btn ant-btn-primary"
-            type="button"
-          >
-            <span>
-              提 交
-            </span>
-          </button>
-          <button
             class="ant-btn ant-btn-default"
             type="button"
           >
             <span>
               重 置
+            </span>
+          </button>
+          <button
+            class="ant-btn ant-btn-primary"
+            type="button"
+          >
+            <span>
+              提 交
             </span>
           </button>
         </div>

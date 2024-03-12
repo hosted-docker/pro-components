@@ -326,12 +326,11 @@ exports[`SchemaForm > 😊 SchemaForm support columns 1`] = `
                   class="ant-picker-input"
                 >
                   <input
+                    aria-invalid="false"
                     autocomplete="off"
                     id="since"
                     placeholder="请选择"
-                    readonly=""
                     size="21"
-                    title=""
                     value=""
                   />
                   <span
@@ -368,19 +367,19 @@ exports[`SchemaForm > 😊 SchemaForm support columns 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>

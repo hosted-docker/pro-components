@@ -219,19 +219,19 @@ exports[`ProForm > 📦 submitted value should be consistent with input when pre
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
@@ -253,19 +253,19 @@ exports[`ProForm > 📦 submitter props support resetButtonProps 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default test_button"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
@@ -287,19 +287,19 @@ exports[`ProForm > 📦 submitter props support submitButtonProps 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary test_button"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary test_button"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
@@ -333,17 +333,17 @@ exports[`ProForm > 📦 validateFieldsReturnFormatValue 1`] = `
               class="ant-form-item-control-input-content"
             >
               <div
-                class="ant-picker ant-picker-outlined ant-picker-status-success ant-picker-focused"
+                class="ant-picker ant-picker-focused ant-picker-outlined ant-picker-status-success"
               >
                 <div
                   class="ant-picker-input"
                 >
                   <input
+                    aria-invalid="false"
                     autocomplete="off"
                     id="date"
                     placeholder="请选择"
                     size="12"
-                    title="2021-07-28"
                     value="2021-07-28"
                   />
                   <span
@@ -405,19 +405,19 @@ exports[`ProForm > 📦 validateFieldsReturnFormatValue 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
@@ -548,19 +548,19 @@ exports[`ProForm > 📦 valueType digit with precision value 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
@@ -594,17 +594,17 @@ exports[`ProForm > 📦 when dateFormatter is a Function 1`] = `
               class="ant-form-item-control-input-content"
             >
               <div
-                class="ant-picker ant-picker-outlined ant-picker-focused"
+                class="ant-picker ant-picker-focused ant-picker-outlined"
               >
                 <div
                   class="ant-picker-input"
                 >
                   <input
+                    aria-invalid="false"
                     autocomplete="off"
                     id="datetime"
                     placeholder="请选择"
                     size="21"
-                    title="2021-08-09 12:12:12"
                     value="2021-08-09 12:12:12"
                   />
                   <span
@@ -695,12 +695,11 @@ exports[`ProForm > 📦 when dateFormatter is a Function 1`] = `
                   class="ant-picker-input"
                 >
                   <input
+                    aria-invalid="false"
                     autocomplete="off"
                     id="time2"
                     placeholder="请选择时间"
-                    readonly=""
                     size="10"
-                    title=""
                     value=""
                   />
                   <span
@@ -740,19 +739,19 @@ exports[`ProForm > 📦 when dateFormatter is a Function 1`] = `
       style="display: flex; gap: 8px; align-items: center;"
     >
       <button
-        class="ant-btn ant-btn-primary"
-        type="button"
-      >
-        <span>
-          提 交
-        </span>
-      </button>
-      <button
         class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
           重 置
+        </span>
+      </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          提 交
         </span>
       </button>
     </div>
