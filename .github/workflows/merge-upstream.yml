@@ -18,9 +18,15 @@ jobs:
         with:
           ref: ${{ env.target_branch }}     # set the branch to merge to
           fetch-depth: 0
+      - name: Git Identity
+        run: |
+          git config --global user.name 'beeant0512'
+          git config --global user.email 'huangxb0512@gmail.com'
+
       - name: Merge Upstream ${{ env.target_branch }}
-        uses: exions/merge-upstream@v1
+        uses: xbeeant/merge-upstream@v1.1
         with:
           upstream: ant-design/pro-components       # set the upstream repo
           upstream-branch: master              # set the upstream branch to merge from
           branch: ${{ env.target_branch }}  # set the branch to merge to
+          ff: --no-ff
